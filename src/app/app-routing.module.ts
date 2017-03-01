@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'createJira', component: LoginComponent },
   ];
   @NgModule({
   imports: [

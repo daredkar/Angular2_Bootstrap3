@@ -3,7 +3,7 @@
 <head>
   <title>HPSM --> Jira</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <header name = "Access-Control-Allow-Origin" value = "*" />
   <meta http-equiv="Access-Control-Allow-Origin" content="*">
   <!-- Bootstrap css file -->
@@ -27,7 +27,7 @@
 <body>
   <div class="col-sm-12">
     <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -35,10 +35,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">HPSM->Jira</a>
+          <a class="navbar-brand" href="#">HPSM &#10148; Jira</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-          <ul class="nav navbar-nav navbar-right">
+        <!--  <ul class="nav navbar-nav navbar-right">
             <li><a href="/home">Home</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
@@ -46,27 +46,28 @@
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
-          </form>
+          </form>-->
         </div>
       </div>
     </nav>
   </div>
-  <div class="container-fluid scrollable">
+  <!--  <div class="container-fluid scrollable">
     <p>BEGIN</p>
     <p>Hi World</p>
 
     <p> </p>
-  </div>
+  </div>-->
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-3 col-md-3 col-lg-3">
       <div class="col-md-3 col-md-2 sidebar">
         <ul class="nav nav-sidebar">
           <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
           <li><a href = "/home">Home </a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">Export</a></li>
+          <li><a href = "/createJira">Create Jira</a></li>
+        <!--  <li><a href="#">Analytics</a></li>
+          <li><a href="#">Export</a></li> -->
         </ul>
-        <ul class="nav nav-sidebar">
+    <!--    <ul class="nav nav-sidebar">
           <li><a href="">Nav item</a></li>
           <li><a href="">Nav item again</a></li>
           <li><a href="">One more nav</a></li>
@@ -77,10 +78,10 @@
           <li><a href="">Nav item again</a></li>
           <li><a href="">One more nav</a></li>
           <li><a href="">Another nav item</a></li>
-        </ul>
+        </ul> -->
       </div>
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-9 col-md-9 col-lg-9">
 
       <my-app>Contents are loading</my-app>
 
