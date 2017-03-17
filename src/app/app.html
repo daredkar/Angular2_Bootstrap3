@@ -1,18 +1,52 @@
-<!-- <div class="well" >
-<div class="container">
-	<h1>Choose the CSV file to create Jira {{name}}</h1>
-	<div>
-		<input type="file" (change)="onChange($event)"/>
-	</div>
-	<div>
-		<table border="1" class="demoTable">
-			<tr *ngFor="let x of pages">
-				<td>{{ x.Url }}</td>
-			</tr>
-		</table>
-	</div>
+<div class="row">
+  <div class="col-sm-12">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">HPSM &#10148; Jira</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <!--  <ul class="nav navbar-nav navbar-right">
+            <li><a href="/home">Home</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>-->
+        </div>
+      </div>
+    </nav>
+  </div>
+    <div class="container-fluid scrollable">
+    <p>BEGIN</p>
+    <p>Hi World</p>
+
+    <p> </p>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <div class="col-md-3 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li class="active"><a href="/">Refresh <span class="sr-only">(current)</span></a></li>
+          <li><a [routerLink]="['/home']" >Home </a></li>
+          <li><a [routerLink]="['/readExcel']" routerLinkActive="active">readExcel </a></li>
+          <li><a [routerLink]="['/createJira']">Create Jira </a></li>
+          <li><a [routerLink]="['/bulkCreate']">Bulk upload </a></li>
+        </ul>
+      </div>
+    </div>
+      <div class="col-sm-10 col-md-9 col-lg-10 contentpage">
+        <div class="container">
+	        <router-outlet></router-outlet>
+          </div>
 </div>
-</div> -->
-<div class="container">
-	<router-outlet></router-outlet>
-</div>
+  </div>

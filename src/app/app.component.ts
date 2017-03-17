@@ -1,19 +1,18 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from './navbar.component';
 import { HomeComponent } from './home/home.component';
 import { Http, Response } from '@angular/http';
 import { PageToRead } from './page_to_read';
 
 @Component({
-	selector: 'my-app',
-	templateUrl: 'app/app.html'
+selector: 'my-app',
+templateUrl: 'app/app.html'
 })
 export class AppComponent {
 
-	pages : PageToRead[] = [];
+pages: PageToRead[] = [];
 
-	constructor (private http: Http) {}
-	onChange(event :any) {
+    constructor (private http: Http) {}
+onChange(event :any) {
         var text : PageToRead[] = [];
         var files = event.srcElement.files;
         if(files[0].name.includes(".csv"))

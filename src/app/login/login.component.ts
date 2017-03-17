@@ -1,16 +1,19 @@
 import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
+import { Converter } from 'csvtojson';
+import { RouterModule } from '@angular/router';
+
+import * as csv from 'csvtojson';
 
 @Component({
-	selector:'login',
-	templateUrl: './app/login/login.html'
-
+selector: 'login',
+templateUrl: './app/login/login.html',
 })
 export class LoginComponent {
-	csvUrl: string = 'http://localhost:8000/export.csv';  // URL to web API
+csvUrl: string = 'app/assets/export.csv';  // URL to web API
   csvData: any[] = [];
 
-  constructor (private http: Http) {}
+  constructor (private http: Http, private router: RouterModule) {}
 
   readCsvData () {
     this.http.get(this.csvUrl)
@@ -30,7 +33,7 @@ export class LoginComponent {
     for ( let i = 0; i < allTextLines.length; i++) {
         // split content based on comma
         let data = allTextLines[i].split(',');
-        if (data.length == headers.length) {
+        if (data.length === headers.length) {
             let tarr = [];
             for ( let j = 0; j < headers.length; j++) {
                 tarr.push(data[j]);
@@ -48,5 +51,17 @@ export class LoginComponent {
       error.status ? `${error.status} - ${error.statusText}` : 'Server error';
     console.error(errMsg); // log to console instead
     return errMsg;
+  }
+
+  convertToJson() {
+    const csvFilePath = 'app/assets/export.csv';
+   csv({noheader: true})
+      .fromFile(csvFilePath)
+      .on('json', (jsonObj: JSON) => {
+    console.log(jsonObj);
+    })
+      .on('done', (error: any) => {
+    console.log('end');
+    });
   }
 }

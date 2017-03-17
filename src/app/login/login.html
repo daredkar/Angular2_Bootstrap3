@@ -13,4 +13,18 @@
       </tr>
     </table>
   </div>
+  <div>
+    <button class="btn btn1 btn2" (click)="convertToJson()">
+       export csv to json
+    </button>
+  </div>
+  <br/><br/>
+  <div class="table-striped">
+    <table border="1" class=" table demoTable">
+      <!--<tr *ngFor="let x of csvData">
+        <td *ngFor="let y of x">{{ y }}</td>
+      </tr>-->
+    </table>
+  </div>
+  <router-outlet></router-outlet>
 </div>

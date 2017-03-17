@@ -1,0 +1,52 @@
+<!--this is the First form-->
+
+<div class="jumbotron" style="min-width: 300px"><h4> Enter the username and password to check authorization</h4>
+<div class="well">
+  <form #f="ngForm" class="ui form">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="name" type="text" class="form-control"  placeholder="UserName"  required>
+        <!--<div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+             Name is required
+        </div>-->
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+
+    <button type="button" class="btn btn-primary btn-md" (click)="authorise()">Authorise</button>
+  </form>
+  <router-outlet></router-outlet>
+  </div>
+<!--________________________________________________________________________________________________-->
+<!--this is the second form-->
+
+<h4>Create single jira issue by following (all fields are mandatory)</h4>   
+    <div class="well">
+    <form class="ui form" #f1="ngForm">
+      <div class="form-group">
+        <label for="Project_key">Project Key:</label>
+        <input type="text" class="form-control" id="Project_key">
+      </div>
+      <div class="form-group">
+        <label for="summary">summary:</label>
+        <input type="text" class="form-control" id="summary">
+      </div>
+      <div class="form-group">
+        <label for="description">description:</label>
+        <input type="text" class="form-control" id="description">
+      </div>
+      <div class="form-group">
+        <label for="issuetype_name">issuetype name:</label>
+        <input type="text" class="form-control" id="issuetype_name">
+      </div>
+      <button type="button" class="btn btn-primary btn-md" (click)="authorise()">create basic jira issue</button>
+    </form>
+    <h3>{{ errMsg }}</h3>
+    </div>
+    <router-outlet></router-outlet>
+</div>
+<router-outlet></router-outlet>
+

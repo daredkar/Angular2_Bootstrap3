@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>HPSM --> Jira</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <header name = "Access-Control-Allow-Origin" value = "*" />
   <meta http-equiv="Access-Control-Allow-Origin" content="*">
@@ -20,73 +20,16 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <!--ggcjsbcs
+    <script src="node_modules/csvtojson/dist/csvtojson.min.js" type="text/javascript"></script>
+    <script src="node_modules/csvtojson/dist/csvtojson.js" type="text/javascript"></script>-->
+
+
   <script>
     System.import('main.js').catch(function(err){ console.error(err); });
   </script>
 </head>
-<body>
-  <div class="col-sm-12">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">HPSM &#10148; Jira</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-        <!--  <ul class="nav navbar-nav navbar-right">
-            <li><a href="/home">Home</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>-->
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!--  <div class="container-fluid scrollable">
-    <p>BEGIN</p>
-    <p>Hi World</p>
-
-    <p> </p>
-  </div>-->
-  <div class="row">
-    <div class="col-sm-3 col-md-3 col-lg-3">
-      <div class="col-md-3 col-md-2 sidebar">
-        <ul class="nav nav-sidebar">
-          <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-          <li><a href = "/home">Home </a></li>
-          <li><a href = "/createJira">Create Jira</a></li>
-        <!--  <li><a href="#">Analytics</a></li>
-          <li><a href="#">Export</a></li> -->
-        </ul>
-    <!--    <ul class="nav nav-sidebar">
-          <li><a href="">Nav item</a></li>
-          <li><a href="">Nav item again</a></li>
-          <li><a href="">One more nav</a></li>
-          <li><a href="">Another nav item</a></li>
-          <li><a href="">More navigation</a></li>
-        </ul>
-        <ul class="nav nav-sidebar">
-          <li><a href="">Nav item again</a></li>
-          <li><a href="">One more nav</a></li>
-          <li><a href="">Another nav item</a></li>
-        </ul> -->
-      </div>
-    </div>
-    <div class="col-sm-9 col-md-9 col-lg-9">
-
-      <my-app>Contents are loading</my-app>
-
-    </div>
-  </div>
-
+<body style="max-width: 100%">
+       <my-app>Contents are loading</my-app>
 </body>
 </html>

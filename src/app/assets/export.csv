@@ -1,0 +1,1445 @@
+Incident ID,Priority,Opened By Name,Affected CI,SLA Expiration,Status,Title,Assignee,Open Time,Assignment Group,Area,Affected Service,Last Update Time,Last Updated By,Description,Alert Status,Description
+IM453799,3 - Average,Daniel Brøns Evald,,,Referred,SUPPORT-5168 CC-93 - booking fejl PS2507,m48050,1/6/2016 9:17,"YouSee Development, Application",application,Kasia2,10/11/2016 6:57,Ramamohan Chokkam,"failed with fejl PS2507: About 60 of them.
+39d08030-9b21-43ab-b316-45426e6c222a (624907636) error report attached ""624907636""
+
+About 80 failed orders.",updated,"failed with fejl PS2507: About 60 of them.
+39d08030-9b21-43ab-b316-45426e6c222a (624907636) error report attached ""624907636""
+
+About 80 failed orders."
+IM453807,3 - Average,Daniel Brøns Evald,,,Referred,SUPPORT-5171 CC-8 - Failed due to error : Choice of installation point,m48050,1/6/2016 9:44,"YouSee Development, Application",application,Kasia2,10/11/2016 6:58,Ramamohan Chokkam,"Exception from columbus :
+columbus_common.link_adaptor$create_agreement fejlede. statusCode: -7, statusMessage: Funktion kunne ikke gennemføres(Kunne ikke afslutte valg af installationspunkt:fejl 0 = OFID06:Inst. ikke mulig: opgi ordren:Den teknologi der skal bruges til denne ordre er ikke tilgængelig på adressen. Du er f.eks ved at oprette fiber i et område hvor der endnu ikke er etableret fiber::Næste trin er installationspunkt)",updated,"Exception from columbus :
+columbus_common.link_adaptor$create_agreement fejlede. statusCode: -7, statusMessage: Funktion kunne ikke gennemføres(Kunne ikke afslutte valg af installationspunkt:fejl 0 = OFID06:Inst. ikke mulig: opgi ordren:Den teknologi der skal bruges til denne ordre er ikke tilgængelig på adressen. Du er f.eks ved at oprette fiber i et område hvor der endnu ikke er etableret fiber::Næste trin er installationspunkt)"
+IM453812,3 - Average,Daniel Brøns Evald,,,Referred,SUPPORT-5173 CC-9 - Failed due to error : Locked order found (Låst ordre findes),m48050,1/6/2016 9:54,"YouSee Development, Application",application,Kasia2,10/11/2016 6:58,Ramamohan Chokkam,"Exception from columbus :
+columbus_common.link_adaptor$update_agreement fejlede. statusCode: -7, statusMessage: Ordre kunne ikke startes(STYR80: Låst ordre findes:fejl 0 = STYR80:Låst ordre findes)
+
+About 50 failed orders",updated,"Exception from columbus :
+columbus_common.link_adaptor$update_agreement fejlede. statusCode: -7, statusMessage: Ordre kunne ikke startes(STYR80: Låst ordre findes:fejl 0 = STYR80:Låst ordre findes)
+
+About 50 failed orders"
+IM453815,3 - Average,Daniel Brøns Evald,,,Referred, SUPPORT-5175 CC-44 - Failed due to error: Kunne ikke afslutte valg af kunde:fejl 0 = NAVN11,m48050,1/6/2016 10:05,"YouSee Development, Application",application,Kasia2,10/11/2016 6:58,Ramamohan Chokkam,"yousee-common.Kasia2Exception: columbus_services.link_adaptor$create_agreement@38f76868 fejlede. statusCode: 7, statusMessage: Funktion kunne ikke gennemf?res(Kunne ikke afslutte valg af kunde:fejl 0 = NAVN11:For/efternavn mere end 33 char::N?ste trin er kunde)
+
+About 40 failed orders.",updated,"yousee-common.Kasia2Exception: columbus_services.link_adaptor$create_agreement@38f76868 fejlede. statusCode: 7, statusMessage: Funktion kunne ikke gennemf?res(Kunne ikke afslutte valg af kunde:fejl 0 = NAVN11:For/efternavn mere end 33 char::N?ste trin er kunde)
+
+About 40 failed orders."
+IM455397,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-5232 Not possible to sell telephony,m46291,7/6/2016 9:20,"YouSee Development, Application",application,SPOC - Salg,24/01/17 13:26:38,Rohit Kumar 1,"Customer: 627567204
+
+It is not possible to sell telephony to the customer.
+
+PYF have checked the cable unit and say that everything looks ok in the configuration.
+
+Might have something to do with the product group: 3FH
+
+The name of the product is Bredbånd 50/10 Mbit, Coax, but they have a fiber product.",updated,"Customer: 627567204
+
+It is not possible to sell telephony to the customer.
+
+PYF have checked the cable unit and say that everything looks ok in the configuration.
+
+Might have something to do with the product group: 3FH
+
+The name of the product is Bredbånd 50/10 Mbit, Coax, but they have a fiber product."
+IM455663,3 - Average,Daniel Brøns Evald,,,Work In Progress,"SUPPORT-5219, Error on terminated package",m46291,6/6/2016 14:28,"YouSee Development, Application",data,Servicecenter Yousee,16/06/16 13:13:08,Vidhya Prabhu,"The address: Nøddevej 1 b has been terminated as per. May 1, but the package is shown in service center.
+
+Same for addresses:
+Hølundvej 2, Ø. Hassing, 9362 Gandrup
+Hølundvej 36-b, Øster Hassing, 9362 Gandrup
+Bollen 9, 9362 Gandrup
+Møllevænget 11, 9362 Gandrup
+Hvolgården 49, V. Hassing, 9310 Vodskov
+Kildevej 10, V. Hassing, 9310 Vodskov
+Fiskerstien 2-a, Hou 9370 Hals
+Nørregade 30-A, Hou, 9370 Hals
+
+See attached.",updated,"The address: Nøddevej 1 b has been terminated as per. May 1, but the package is shown in service center.
+
+Same for addresses:
+Hølundvej 2, Ø. Hassing, 9362 Gandrup
+Hølundvej 36-b, Øster Hassing, 9362 Gandrup
+Bollen 9, 9362 Gandrup
+Møllevænget 11, 9362 Gandrup
+Hvolgården 49, V. Hassing, 9310 Vodskov
+Kildevej 10, V. Hassing, 9310 Vodskov
+Fiskerstien 2-a, Hou 9370 Hals
+Nørregade 30-A, Hou, 9370 Hals
+
+See attached."
+IM455824,3 - Average,Gitte Fjældegaard,,,Work In Progress,"SUPPORT-5290 Difference mellem Dataudtræk(EDW), eOrdre og Columbus",m46291,8/6/2016 9:18,"YouSee Development, Application",data,eOrdre,30/01/17 13:25:30,Lars Aarby,"Se attachment.
+
+We have a difference between Dataudtræk(EDW)/eOrdre/Columbus.
+Maybe you can explain why the following is the case for Cableunitnumber: 2000067:
+• ’Dataudtræk’ (EDW): 81 GP
+• eOrdre: 68 GP (But 82 adresses on tab ’Produkter i drift)
+• Columbus: 68 GP",updated,"Se attachment.
+
+We have a difference between Dataudtræk(EDW)/eOrdre/Columbus.
+Maybe you can explain why the following is the case for Cableunitnumber: 2000067:
+• ’Dataudtræk’ (EDW): 81 GP
+• eOrdre: 68 GP (But 82 adresses on tab ’Produkter i drift)
+• Columbus: 68 GP"
+IM457522,3 - Average,Giribabu Penki,,,Accepted, SUPPORT-6711 (KASIATWO-2538) More than one I customer at each address/installation,m48050,14/06/16 15:28:19,"YouSee Development, Application",application,kasia2,17/11/16 06:52:24,Ramamohan Chokkam,"There are about 27000 installations, where there are more than one ""I"" customer exist. It is important to handle these.",updated,"There are about 27000 installations, where there are more than one ""I"" customer exist. It is important to handle these."
+IM457640,3 - Average,Daniel Brøns Evald,,,Referred,SUPPORT-5286 O-customer orders are blocked,m46291,16/06/16 09:11:01,"YouSee Development, Application",application,Servicecenter Yousee,18/07/16 08:01:51,Rohit Kumar 1,"Since release of Casper to Columbus orders from servicecenter have been blocked in kasia2, which gives a lot of manual cases in SPOC.",updated,"Since release of Casper to Columbus orders from servicecenter have been blocked in kasia2, which gives a lot of manual cases in SPOC."
+IM457904,3 - Average,Jonas Marschall,,,Referred, SUPPORT-5301 Sags nr.: 1884684 - Missing Channels on Humax,m46291,16/06/16 15:44:33,"YouSee Development, Application",data,YOUSEE BOKS HUMAX,11/7/2016 11:44,Rohit Kumar 1,"Customer no or address: 616467217
+System: MASH
+Procuct: YouSee Boks Humax
+Login info: -
+Serial no:
+Hi
+
+I my customer is missing these channels on his humax box.
+
+QAM 119
+DR1
+DR2
+SVT2
+ARD
+
+QAM30
+tv2
+Kanal 5
+Men har TV3
+
+QAM 34
+SVT1
+NRK1
+Tinget
+men har TV4
+
+QAM 33
+RTL
+DK4
+NDR
+ZDF
+
+The channels are fine without the humax box.",updated,"Customer no or address: 616467217
+System: MASH
+Procuct: YouSee Boks Humax
+Login info: -
+Serial no:
+Hi
+
+I my customer is missing these channels on his humax box.
+
+QAM 119
+DR1
+DR2
+SVT2
+ARD
+
+QAM30
+tv2
+Kanal 5
+Men har TV3
+
+QAM 34
+SVT1
+NRK1
+Tinget
+men har TV4
+
+QAM 33
+RTL
+DK4
+NDR
+ZDF
+
+The channels are fine without the humax box."
+IM457906,3 - Average,Jonas Marschall,,,Referred,"SUPPORT-5303 HBO, Humax",m46291,16/06/16 15:48:56,"YouSee Development, Application",data,YOUSEE BOKS HUMAX,11/7/2016 11:54,Rohit Kumar 1,"Customer no or address: 607904410
+System: Masterdatabasen
+Procuct: Andet
+Login info:
+Serial no:
+TV-Box: 63710760601718060080697A8138A9
+The customer has problemer opening the HBO Nordic app from his Humax box. There appears to be an inconsistency between MDB and the MDB Interpreter, so the rights don't appear in the Interpreter. The customer has been provisioned and has restarted his Humax multiple times without any result.",updated,"Customer no or address: 607904410
+System: Masterdatabasen
+Procuct: Andet
+Login info:
+Serial no:
+TV-Box: 63710760601718060080697A8138A9
+The customer has problemer opening the HBO Nordic app from his Humax box. There appears to be an inconsistency between MDB and the MDB Interpreter, so the rights don't appear in the Interpreter. The customer has been provisioned and has restarted his Humax multiple times without any result."
+IM458541,3 - Average,Per Christian Sobol,,,Referred, SUPPORT-5315 Cannot rent a movie on Humax box - works on WEB,m46291,21/06/16 09:43:16,"YouSee Development, Application",data,YOUSEE BOKS HUMAX,11/7/2016 12:53,Rohit Kumar 1,"This costumer connected his payment card the 11/06, saturday.
+Since that day, it didn't work when you try to rend a movie directly from the Humax Box.
+
+If you do it from YouSee's homepage, it works perfectly. I just did it today, The 20/06
+It comes up with an error box, stating that i have to "" connect "" his payment card, before he can rend a movie, but he did.
+Accountnumber: 605818541",updated,"This costumer connected his payment card the 11/06, saturday.
+Since that day, it didn't work when you try to rend a movie directly from the Humax Box.
+
+If you do it from YouSee's homepage, it works perfectly. I just did it today, The 20/06
+It comes up with an error box, stating that i have to "" connect "" his payment card, before he can rend a movie, but he did.
+Accountnumber: 605818541"
+IM467665,3 - Average,Daniel Brøns Evald,,,Work In Progress,"SUPPORT-5555,Doesnt show changes on the servicecenter",m46291,28/07/16 12:11:57,"YouSee Development, Application",data,Servicecenter Yousee,9/1/2017 11:30,Vidhya Prabhu,"Customer no or address: Svinget 19 A 1 5250
+System: Servicecenter
+Procuct: Andet
+Login info:
+Serial no:
+Hi
+
+We got an issue, with the servicecenter.
+when we change the paccage in Cu/eOrdre it doesnt show the change in the servicecenter.
+
+Svinget 19 a 1 5250 shows a GP in th servicecenter, but there is no paccage in CU.
+
+This is a generel error tru out all the Cu's.
+
+We have heard this from severel of the O-custumers
+
+Can u have a look at it?
+Best regards
+
+Kim Farnæs",updated,"Customer no or address: Svinget 19 A 1 5250
+System: Servicecenter
+Procuct: Andet
+Login info:
+Serial no:
+Hi
+
+We got an issue, with the servicecenter.
+when we change the paccage in Cu/eOrdre it doesnt show the change in the servicecenter.
+
+Svinget 19 a 1 5250 shows a GP in th servicecenter, but there is no paccage in CU.
+
+This is a generel error tru out all the Cu's.
+
+We have heard this from severel of the O-custumers
+
+Can u have a look at it?
+Best regards
+
+Kim Farnæs"
+IM470035,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-5712 All Products is missing in EDW,m46291,11/8/2016 20:15,"YouSee Development, Application",data,YOUSEE MDB,12/8/2016 7:50,Rohit Kumar 1,"Customer:628058603
+Cards and channels not in EDW Activate date from Columbus 010816
+Broardband Not in EDW Activation date Columbus 290716
+
+please see attched",updated,"Customer:628058603
+Cards and channels not in EDW Activate date from Columbus 010816
+Broardband Not in EDW Activation date Columbus 290716
+
+please see attched"
+IM471380,3 - Average,Louise Dahl Pedersen,,,Referred,SUPPORT-5842 Projektnr. 17298 - Ca2CU - O-kunde rettelser slår ikke igennem til eOrdre,,16/08/16 12:28:04,"YouSee Development, Application",data,eOrdre,26/12/16 14:21:15,Pallavi Takale,"Projektnr. 17298 - Ca2CU - O-kunde rettelser slår ikke igennem til eOrdre
+
+Se vedhæftet",updated,"Projektnr. 17298 - Ca2CU - O-kunde rettelser slår ikke igennem til eOrdre
+
+Se vedhæftet"
+IM474311,3 - Average,Ann Rong,,,Accepted,"SUPPORT-6281 , AMSid for anden adresse.YC 17 25 74",m46291,22/08/16 13:12:18,"YouSee Development, Application",data,eOrdre,17/10/16 12:11:05,Rohit Kumar 1,"Se attachment
+Hvad er det eordre forsøger at fortælle?",updated,"Se attachment
+Hvad er det eordre forsøger at fortælle?"
+IM476474,3 - Average,Søren Madsen,,,Referred,"SUPPORT-5969 , Products missing in EDW",m48050,31/08/16 10:40:27,"YouSee Development, Application",data,YOUSEE MDB,4/11/2016 9:54,Ramamohan Chokkam,"Customer: 	629432791
+Please add products in EDW:
+1101801
+1201507
+1301183",updated,"Customer: 	629432791
+Please add products in EDW:
+1101801
+1201507
+1301183"
+IM476602,3 - Average,Søren Madsen,,,Accepted,SUPPORT-5966 Missing products in EDW,m46291,1/9/2016 11:03,"YouSee Development, Application",data,YOUSEE MDB,2/9/2016 9:23,Poonam Thergaonkar,"Customer: 629226970
+Please add products in EDW:
+1101601
+1201507
+1201601
+1205006
+1205007
+1205040
+1205041
+1205046
+1205059
+1205066
+1205069
+1205070
+1205075
+1205080
+1205081
+1205082
+1205083
+1205089
+1205123
+1205124
+1205125
+1205140
+1205141
+1206002
+1301183",updated,"Customer: 629226970
+Please add products in EDW:
+1101601
+1201507
+1201601
+1205006
+1205007
+1205040
+1205041
+1205046
+1205059
+1205066
+1205069
+1205070
+1205075
+1205080
+1205081
+1205082
+1205083
+1205089
+1205123
+1205124
+1205125
+1205140
+1205141
+1206002
+1301183"
+IM476605,3 - Average,Daniel Brøns Evald,,,Referred,"SUPPORT-5894 - Many subs in CU, but none in EDW",m56142,1/9/2016 11:08,"YouSee Development, Application",data,YOUSEE MDB,16/09/16 14:07:04,Poonam Thergaonkar,"These customers have multiple subs in CU, but EDW has none.
+Customer	Action
+628288815	Many subs in CU, none in EDW - investigate and correct
+628160896	Many subs in CU, none in EDW- investigate and correct
+628064706	Many subs in CU, none in EDW- investigate and correct
+628619017	Many subs in CU, none in EDW- investigate and correct
+628058603	Many subs in CU, none in EDW- investigate and correct
+628160896	Many subs in CU, none in EDW- investigate and correct
+628200985	Many subs in CU, none in EDW- investigate and correct
+627953098	Many subs in CU, none in EDW- investigate and correct
+628143680	Many subs in CU, none in EDW- investigate and correct",updated,"These customers have multiple subs in CU, but EDW has none.
+Customer	Action
+628288815	Many subs in CU, none in EDW - investigate and correct
+628160896	Many subs in CU, none in EDW- investigate and correct
+628064706	Many subs in CU, none in EDW- investigate and correct
+628619017	Many subs in CU, none in EDW- investigate and correct
+628058603	Many subs in CU, none in EDW- investigate and correct
+628160896	Many subs in CU, none in EDW- investigate and correct
+628200985	Many subs in CU, none in EDW- investigate and correct
+627953098	Many subs in CU, none in EDW- investigate and correct
+628143680	Many subs in CU, none in EDW- investigate and correct"
+IM477630,3 - Average,Michael Sandorf Christensen,,,Referred,SUPPORT-7094 - SWECO Script: Sweco scripts failed because of missing Address Points,m56142,5/9/2016 11:48,"YouSee Development, Data",data,MAD,12/1/2017 11:12,Pallavi Takale,"When the Sweco OIS address load script was executed Saturday 20/8 2016 the script failed because some addresses did not contain an address point. That is wrong as ALL accress addresses shall contain an address point.
+
+TCS shall prepare a list of all access addresses without address points and suggest how to solve that problem.",updated,"When the Sweco OIS address load script was executed Saturday 20/8 2016 the script failed because some addresses did not contain an address point. That is wrong as ALL accress addresses shall contain an address point.
+
+TCS shall prepare a list of all access addresses without address points and suggest how to solve that problem."
+IM477756,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-6543 Wrong name for phonenumber due to error in data on customer,m48050,6/9/2016 15:13,"YouSee Development, Data",data,SPOC - Salg,10/11/2016 6:53,Ramamohan Chokkam,"Owner of number 66139834 ist Finn Nielsen, but when you look for the number in the white pages (krak.dk) a Kirsten Bundgaard pops up. Kirsten has nothing to do with Finn, and Finn has had the same phone number for about 20 years. Is there anything further behind in the system, where Kirsten is mixed up with Finn somehow? Is there anythiong we can do? I made the number as ""hemmeligt nummer"" now, so the number does not show up anymore - is there anything else we can do. Hoping to get an answer, so we can inform the customer. Thank you. Regards Barbara
+
+file send  ’katv315.zip’",DEADLINE ALERT,"Owner of number 66139834 ist Finn Nielsen, but when you look for the number in the white pages (krak.dk) a Kirsten Bundgaard pops up. Kirsten has nothing to do with Finn, and Finn has had the same phone number for about 20 years. Is there anything further behind in the system, where Kirsten is mixed up with Finn somehow? Is there anythiong we can do? I made the number as ""hemmeligt nummer"" now, so the number does not show up anymore - is there anything else we can do. Hoping to get an answer, so we can inform the customer. Thank you. Regards Barbara
+
+file send  ’katv315.zip’"
+IM478199,3 - Average,Mimi Degn Høst,,,Referred, SUPPORT-6366  MIssing channels - 629597081,m48050,6/9/2016 15:49,"YouSee Development, Application",data,COLUMBUS,2/11/2016 11:27,Ramamohan Chokkam,"This customer cann only see ""info kanalen"" on the Yousee TV BOX and nowhere else.
+CU and MDb has grundpakke+BS but in MASH tv info channel is the only on on the tv box. Reprov has been tried",updated,"This customer cann only see ""info kanalen"" on the Yousee TV BOX and nowhere else.
+CU and MDb has grundpakke+BS but in MASH tv info channel is the only on on the tv box. Reprov has been tried"
+IM478461,3 - Average,Mimi Degn Høst,,,Accepted,"SUPPORT-6272 , cmore channels - 169628969",m38931,7/9/2016 13:31,"YouSee Development, Data",data,COLUMBUS,21/11/16 11:40:48,Ramamohan Chokkam,"the customer is channels from the cmore total packadge, the packade is in mdb but the rights arent on his card. we have sent out a new card and sent out rights for the card, but the card havent recived rights. a technitian have corntrollede the installation and it is ok.
+-
+Columbus provisionerer forkert pakke på abejdsopgave 4204 Ændre Tv Kanal,  ordrenummer: 169628969. Der sendes CaFilm i stedet for C more total.
+CU is making a woring reprov on a package on job 4204 - Ændre TV kanal
+There is send CaFilm instead of C more total",updated,"the customer is channels from the cmore total packadge, the packade is in mdb but the rights arent on his card. we have sent out a new card and sent out rights for the card, but the card havent recived rights. a technitian have corntrollede the installation and it is ok.
+-
+Columbus provisionerer forkert pakke på abejdsopgave 4204 Ændre Tv Kanal,  ordrenummer: 169628969. Der sendes CaFilm i stedet for C more total.
+CU is making a woring reprov on a package on job 4204 - Ændre TV kanal
+There is send CaFilm instead of C more total"
+IM480359,3 - Average,Rohit Kumar 1,,,Referred, SUPPORT-6425 CC-157 Funktion kunne ikke gennemføres(Forventede at have afsluttet ordreli,m48050,16/09/16 12:40:38,"YouSee Development, Application",application,Kasia2,3/11/2016 10:28,Ramamohan Chokkam,"Exception from Columbus:
+
+yousee-common.Kasia2Exception: columbus_services.link_adaptor$update_agreement@28513693 fejlede. statusCode: -7, statusMessage: Funktion kunne ikke gennemføres(Forventede at have afsluttet ordrelinier:fejl 0 = PK0221:Ordre uden produktlinjer F1:Denne ordre indeholder ingen oprettelse eller nedtagelse af coax produkter og ingen bestilling af engangsydelser eller tekniker.::Næste trin er ordrelinier)
+
+Please find attached.",updated,"Exception from Columbus:
+
+yousee-common.Kasia2Exception: columbus_services.link_adaptor$update_agreement@28513693 fejlede. statusCode: -7, statusMessage: Funktion kunne ikke gennemføres(Forventede at have afsluttet ordrelinier:fejl 0 = PK0221:Ordre uden produktlinjer F1:Denne ordre indeholder ingen oprettelse eller nedtagelse af coax produkter og ingen bestilling af engangsydelser eller tekniker.::Næste trin er ordrelinier)
+
+Please find attached."
+IM480716,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6356 Missing backend integration between O-customer selfservice and Columbus,m46291,16/09/16 12:39:56,"YouSee Development, Application",application,Servicecenter Yousee,12/12/2016 7:01,Ramamohan Chokkam,"Customer no or address: ALL CUs on service center
+System: Servicecenter
+Procuct: Andet
+Login info:
+Serial no:
+After the Casper to Columbus migration all package orders from the service 'Change Package' (Skift pakke) on the O-customer Selfservice is going into manual handling in Salesforce and is handled by 'Foreningsservice'. The business would like to have this corrected so that package orders to directly into Columbus. Morten Frank has already done analysis on this issues.",updated,"Customer no or address: ALL CUs on service center
+System: Servicecenter
+Procuct: Andet
+Login info:
+Serial no:
+After the Casper to Columbus migration all package orders from the service 'Change Package' (Skift pakke) on the O-customer Selfservice is going into manual handling in Salesforce and is handled by 'Foreningsservice'. The business would like to have this corrected so that package orders to directly into Columbus. Morten Frank has already done analysis on this issues."
+IM482696,3 - Average,Jonas Marschall,,,Accepted,SUPPORT-6421 Deceased husband name is still showing i on Mit yousee,m48050,23/09/16 08:44:17,"YouSee Development, Application",data,Mit Yousee,3/11/2016 10:17,Ramamohan Chokkam,"Customer no or address: EM106656, Sorthatvej 32, Sorthat-muleby, 3700 Rønne
+System: Mit YouSee
+Procuct: BB
+Login info: EM106656
+Serial no:
+The Customer name Marianne Hansen",updated,"Customer no or address: EM106656, Sorthatvej 32, Sorthat-muleby, 3700 Rønne
+System: Mit YouSee
+Procuct: BB
+Login info: EM106656
+Serial no:
+The Customer name Marianne Hansen"
+IM482711,3 - Average,Annette Rudfred,,,Referred, SUPPORT-6420  Bliver ikke overført til MASH 614734231,m48050,23/09/16 09:38:18,"YouSee Development, Application",data,eOrdre,3/11/2016 10:16,Ramamohan Chokkam,"This customer has no access to movies and series, as well as Cmore ligth ..
+Rights are properly CU, SMP5 & MDB, but will not be transferred to MASH.
+_________________
+In danish
+Denne kunde har ikke adgang til Film & serier, samt Cmore ligth..
+Rettigheder står korrekt i CU, SMP5 & MDB, men bliver ikke overført til MASH.",updated,"This customer has no access to movies and series, as well as Cmore ligth ..
+Rights are properly CU, SMP5 & MDB, but will not be transferred to MASH.
+_________________
+In danish
+Denne kunde har ikke adgang til Film & serier, samt Cmore ligth..
+Rettigheder står korrekt i CU, SMP5 & MDB, men bliver ikke overført til MASH."
+IM482787,3 - Average,Mimi Degn Høst,,,Referred, SUPPORT-6419 MIssing channels - 629743034,m48050,23/09/16 14:00:01,"YouSee Development, Application",data,COLUMBUS,3/11/2016 10:14,Ramamohan Chokkam,"Error in mash with the message - channels are missing in reprove. Tried to reprove and remove/add SMP5
+Also wrong date in MDB",updated,"Error in mash with the message - channels are missing in reprove. Tried to reprove and remove/add SMP5
+Also wrong date in MDB"
+IM483663,3 - Average,Søren Madsen,,,Accepted, SUPPORT-6417  Sags nr.: 37683257. Missing products in EDW.,m48050,26/09/16 15:37:21,"YouSee Development, Application",data,YOUSEE MDB,3/11/2016 10:10,Ramamohan Chokkam,"Customer: 629270703
+Please add products in EDW:
+1101001
+1121001
+1301172	",DEADLINE ALERT,"Customer: 629270703
+Please add products in EDW:
+1101001
+1121001
+1301172	"
+IM485933,3 - Average,Per Christian Sobol,,,Referred," SUPPORT-6404  Error when acces ""arkiv""",m48050,30/09/16 12:28:14,"YouSee Development, Application",data,YOUSEE BOKS HUMAX,3/11/2016 9:36,Ramamohan Chokkam,"Error appers when trying to use arkiv on YouSee Humax Boks.
+-----------
+Denne kunde får fejl 8004 ved tilgang til arkiv og afspilning af hvilken som helst udsendelse fra arkiv. Der er forsøgt med reset af Humax boks og nedlæg/opret i smp5 uden held, der kan være fejl i EDW det skal tjekkes.
+
+
+
+Lid: YL501372
+
+Kundenr: 616263181
+
+Chipid: 0600806BB1425784",updated,"Error appers when trying to use arkiv on YouSee Humax Boks.
+-----------
+Denne kunde får fejl 8004 ved tilgang til arkiv og afspilning af hvilken som helst udsendelse fra arkiv. Der er forsøgt med reset af Humax boks og nedlæg/opret i smp5 uden held, der kan være fejl i EDW det skal tjekkes.
+
+
+
+Lid: YL501372
+
+Kundenr: 616263181
+
+Chipid: 0600806BB1425784"
+IM486651,3 - Average,Mimi Degn Høst,,,Referred, SUPPORT-6395 Missing BS-channels  - YC184760/603051947,m48050,4/10/2016 10:26,"YouSee Development, Application",data,COLUMBUS,10/11/2016 7:09,Ramamohan Chokkam,"YC184760/603051947
+
+
+
+This customer can't see his choose self channels on the Humax box. He receive the basic package without any problems. The channels is located in MASH, SQL, Masterdatasen and Eordre/CU. I have tried to take down the TV and internet and open it again in SMP5 without results. I have tried to take it down and open it again in Eordre/CU
+
+see attahced",updated,"YC184760/603051947
+
+
+
+This customer can't see his choose self channels on the Humax box. He receive the basic package without any problems. The channels is located in MASH, SQL, Masterdatasen and Eordre/CU. I have tried to take down the TV and internet and open it again in SMP5 without results. I have tried to take it down and open it again in Eordre/CU
+
+see attahced"
+IM486890,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-6374  Missing subscribtion in MDB because products needs to be activated in EDW,m48050,5/10/2016 12:11,"YouSee Development, Application",data,YOUSEE MDB,2/11/2016 11:50,Ramamohan Chokkam,"Customer:625940015
+please activate products in EDW:
+NIX TDC 100/20 P           1350006                       290816
+please see attched",DEADLINE ALERT,"Customer:625940015
+please activate products in EDW:
+NIX TDC 100/20 P           1350006                       290816
+please see attched"
+IM486937,3 - Average,Daniel Brøns Evald,,,Accepted,"SUPPORT-6250 , Same customer number used for blockbuster account and CU/RAS account",m46291,5/10/2016 14:36,"YouSee Development, Application",application,SPOC - Kunder,11/10/2016 9:54,Rohit Kumar 1,"This customer number 628657158 is found in SPOC as a blockbuster customer, but also found in CU/RAS as a coax customer. Both have different names.",updated,"This customer number 628657158 is found in SPOC as a blockbuster customer, but also found in CU/RAS as a coax customer. Both have different names."
+IM487011,3 - Average,Daniel Brøns Evald,,,Accepted,"SUPPORT-6248  , Call to kasia2 gives an error",m46291,6/10/2016 10:56,"YouSee Development, Application",application,eWeb,18/11/16 15:59:08,Rohit Kumar 1,"Address:
+Tanja Bocrh
+Borthigsgade,3,1
+2100 København Ø
+
+The call http://kasia.int.yousee.dk/afsaetning/638860/189047/EW gives en error. It works with other sales channels. Because of this eweb says that coax is not found on the address.",updated,"Address:
+Tanja Bocrh
+Borthigsgade,3,1
+2100 København Ø
+
+The call http://kasia.int.yousee.dk/afsaetning/638860/189047/EW gives en error. It works with other sales channels. Because of this eweb says that coax is not found on the address."
+IM489210,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-6607 DocID: 37499529 products missing in EDW,m48050,13/10/16 10:37:58,"YouSee Development, Application",data,YOUSEE MDB,14/11/16 13:13:16,Ramamohan Chokkam,"Customer:628142043 are missing all products in EDW
+please add products
+
+
+1101001	Grundpakke	aktiv	clear				EF544637	628142043	ga		1815630
+	1201505	YouSee Kort	aktiv	dtv	32907440492			EF544637	628142043	ga		1815630
+	1205023	Viasat Nature HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205030	Disney Channel HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205040	Discovery HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205045	MTV HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205054	BBC Brit	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205059	CANAL9	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205066	Animal Planet HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205069	TV3 Puls	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205075	ID Investigation Discovery	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205081	TV2 Charlie	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205082	Kanal 4	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205083	TV2 Zulu	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205087	TNT HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205096	TV2 Fri HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205123	TV3+ HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205124	TV3 Sport 1 HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205135	TLC HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205138	Comedy Central	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205139	National Geographic People HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205140	Tv2 sport	aktiv	dtv				EF544637	628142043	ta		1815630
+	1206002	20 valgfrie kanaler	aktiv	dtv				EF544637	628142043	ta		1815630
+
+Activated   200416
+please see attached",updated,"Customer:628142043 are missing all products in EDW
+please add products
+
+
+1101001	Grundpakke	aktiv	clear				EF544637	628142043	ga		1815630
+	1201505	YouSee Kort	aktiv	dtv	32907440492			EF544637	628142043	ga		1815630
+	1205023	Viasat Nature HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205030	Disney Channel HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205040	Discovery HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205045	MTV HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205054	BBC Brit	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205059	CANAL9	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205066	Animal Planet HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205069	TV3 Puls	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205075	ID Investigation Discovery	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205081	TV2 Charlie	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205082	Kanal 4	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205083	TV2 Zulu	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205087	TNT HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205096	TV2 Fri HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205123	TV3+ HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205124	TV3 Sport 1 HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205135	TLC HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205138	Comedy Central	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205139	National Geographic People HD	aktiv	dtv				EF544637	628142043	ta		1815630
+	1205140	Tv2 sport	aktiv	dtv				EF544637	628142043	ta		1815630
+	1206002	20 valgfrie kanaler	aktiv	dtv				EF544637	628142043	ta		1815630
+
+Activated   200416
+please see attached"
+IM489269,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-6610 DocID: 37732714 Missing products in MDB/EDW,m48050,11/10/2016 9:13,"YouSee Development, Application",data,YOUSEE MDB,15/11/16 05:55:10,Ramamohan Chokkam,"Customer:629623651 are missing products in EDW
+Looks like EDW ID is missing since all products are missing on customer?
+
+Please see attached",updated,"Customer:629623651 are missing products in EDW
+Looks like EDW ID is missing since all products are missing on customer?
+
+Please see attached"
+IM490225,3 - Average,Jonas Marschall,,,Accepted, SUPPORT-6616 DocID: 37896907 - The customer can not see his subscription,m48050,14/10/16 09:19:17,"YouSee Development, Application",data,Mit Yousee,15/11/16 06:46:11,Ramamohan Chokkam,"Coax BB/TV
+Customer is logged in
+More than one device
+
+This is the first time customer has this issue
+Web - Chrome
+On the customers user he can not se his subscription - no data is available
+Account nr.: 616165471
+Username: EShs1353
+Password: sejre8A8
+LID/Nr.: 616165471
+Time and date: 1310
+Customers affected: 1
+URL: https://yousee.dk/mityousee/forside.aspx",updated,"Coax BB/TV
+Customer is logged in
+More than one device
+
+This is the first time customer has this issue
+Web - Chrome
+On the customers user he can not se his subscription - no data is available
+Account nr.: 616165471
+Username: EShs1353
+Password: sejre8A8
+LID/Nr.: 616165471
+Time and date: 1310
+Customers affected: 1
+URL: https://yousee.dk/mityousee/forside.aspx"
+IM490379,3 - Average,Daniel Brøns Evald,,,Accepted,SUPPORT-6285  Error on report marks on measurepoints in KISS,m56142,17/10/16 10:19:04,"YouSee Development, Data",technical,KISS,4/1/2017 7:52,Ramamohan Chokkam,"The data extract AktivitetMPMIR shows the value <NULL>, see attached.
+
+From around Sep. 26 some measurepoints are marked with ""null"" value. Error has been seen on ""Kontrakt behandles"" and ""Færdigmelding behandles"".
+
+If any questions please contact Kim Ronnie Nielsen.",DEADLINE ALERT,"The data extract AktivitetMPMIR shows the value <NULL>, see attached.
+
+From around Sep. 26 some measurepoints are marked with ""null"" value. Error has been seen on ""Kontrakt behandles"" and ""Færdigmelding behandles"".
+
+If any questions please contact Kim Ronnie Nielsen."
+IM490414,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6378 Missing the 10 Bland selv pack,m48050,17/10/16 12:28:11,"YouSee Development, Application",data,YOUSEE MDB,2/11/2016 12:01,Ramamohan Chokkam,"Customer no or address: 627953098
+System: Masterdatabasen
+Procuct: BlandSelv TV
+Login info:
+Serial no:
+he is the Missing the 10 Bland selv pack in MDB so they are not working on the NetGem boks /
+
+
+Seriernummeret / MAC on the Netgem
+
+0004306213c7
+0004305fdd0a
+
+It looks like the installation seq. 2034309 is deleted in EDW, but is found in Columbus. In KISS the address is attached to correct cable unit.",DEADLINE ALERT,"Customer no or address: 627953098
+System: Masterdatabasen
+Procuct: BlandSelv TV
+Login info:
+Serial no:
+he is the Missing the 10 Bland selv pack in MDB so they are not working on the NetGem boks /
+
+
+Seriernummeret / MAC on the Netgem
+
+0004306213c7
+0004305fdd0a
+
+It looks like the installation seq. 2034309 is deleted in EDW, but is found in Columbus. In KISS the address is attached to correct cable unit."
+IM492340,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6638 Missing rights due to deleted installation,m48050,21/10/16 09:32:54,"YouSee Development, Application",data,YOUSEE MDB,15/11/16 12:10:16,Ramamohan Chokkam,"Customer no or address: 628204607
+System: Masterdatabasen
+
+Customer has no active products, so there are no rights in MDB. The installation seems deleted in EDW. Please investigate with Columbus and provide rights",updated,"Customer no or address: 628204607
+System: Masterdatabasen
+
+Customer has no active products, so there are no rights in MDB. The installation seems deleted in EDW. Please investigate with Columbus and provide rights"
+IM494349,3 - Average,Marianne Bonde Olsen,,,Referred, SUPPORT-6581 Filled Accountnumber/namein OSLU image will not be transferred tothe correspondingBIER,m38931,27/10/16 14:06:00,Cap Geminis AD,data,COLUMBUS,14/11/16 11:39:38,Ramamohan Chokkam,"Information in Kont-nr/navn in OSLU in the CU order, is not transfered to the belonging ordrer in the system BIER. This has not been a problem earlier. I have maid several checks that the information actually was transfered i previous ordrers. But now it seems like it fails. Two exambles is attached -----------Informationen i Kont-nr/navn i OSLU i CU ordren, bliver ikke overført til det tilhørende BIER ID. Det har ikke tidligere været et problem tidligere. Jeg har lavet flere tjek på at informationen faktisk blev overført i tidligere ordrer. Men nu ser det ud til at det fejler. To eksempler er vedhæftet.
+se att.",updated,"Information in Kont-nr/navn in OSLU in the CU order, is not transfered to the belonging ordrer in the system BIER. This has not been a problem earlier. I have maid several checks that the information actually was transfered i previous ordrers. But now it seems like it fails. Two exambles is attached -----------Informationen i Kont-nr/navn i OSLU i CU ordren, bliver ikke overført til det tilhørende BIER ID. Det har ikke tidligere været et problem tidligere. Jeg har lavet flere tjek på at informationen faktisk blev overført i tidligere ordrer. Men nu ser det ud til at det fejler. To eksempler er vedhæftet.
+se att."
+IM495313,3 - Average,Thomas Andreasen,,,Referred, SUPPORT-6548 SMP-error on order 9628293,m48050,31/10/16 11:08:14,"YouSee Development, Application",data,CSAM 3.0,10/11/2016 7:15,Ramamohan Chokkam,"Customer: 662369506
+smp-error. Is linked with the generation of yousee-login on the customer number.
+YS-pro is unable to gather the required information from Kasia and is thus unable to complete the order. Retrying the task in SMP does not resolve the issue.",updated,"Customer: 662369506
+smp-error. Is linked with the generation of yousee-login on the customer number.
+YS-pro is unable to gather the required information from Kasia and is thus unable to complete the order. Retrying the task in SMP does not resolve the issue."
+IM496192,3 - Average,Thomas Andreasen,,,Referred,SUPPORT-6426 Money is not drawn on cosumer account,m29485,3/11/2016 9:06,Cap Geminis AD,data,SPOC - Carrie,5/12/2016 15:43,Vidhya Prabhu,"Customer:602304465 is not charged
+we can see bills in Carrie and customer also recive a receipt for paying but is not charged on customer bank account
+
+please see attached",updated,"Customer:602304465 is not charged
+we can see bills in Carrie and customer also recive a receipt for paying but is not charged on customer bank account
+
+please see attached"
+IM497889,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-6556 No rights/product in MDB and salesforce,m48050,10/11/2016 11:28,"YouSee Development, Application",data,YOUSEE MDB,11/11/2016 12:10,Ramamohan Chokkam,"Customer:628619017 are missinfg products in EDW
+please add all products.",updated,"Customer:628619017 are missinfg products in EDW
+please add all products."
+IM498571,3 - Average,Thomas Andreasen,,,Accepted," SUPPORT-6565  The Customer is not able to change their channels on ""mit.yousee"" due to missing",m48050,11/11/2016 12:08,"YouSee Development, Application",data,YOUSEE MDB,11/11/2016 12:32,Ramamohan Chokkam,"Customer:628003705 are missing product in EDW
+please add missing products in EDW
+please see attached",updated,"Customer:628003705 are missing product in EDW
+please add missing products in EDW
+please see attached"
+IM498816,3 - Average,Jonas Marschall,,,Referred, SUPPORT-6753 DocID: 38336984 - Missing subscribtion in selfcare,m48050,15/11/16 10:40:17,"YouSee Development, Application",data,Mit Yousee,22/11/16 08:43:01,Ramamohan Chokkam,"Coax BB/TV
+Customer is logged in
+More than one device
+
+
+Web - Chrome
+Customer tried login to check up on his subscribtion, but no subscribtion showed up.
+Tried to login, checked wheter it was the right login in CSAM (it was). No subscribtion showed up.
+Account nr.: 620007552
+Username: 620007552
+Password: papir5T2
+LID/Nr.: YL 58 05 08
+Time and date: 2016-11-15
+Customers affected: 1
+URL: https://yousee.dk/mityousee/forside.aspx",updated,"Coax BB/TV
+Customer is logged in
+More than one device
+
+
+Web - Chrome
+Customer tried login to check up on his subscribtion, but no subscribtion showed up.
+Tried to login, checked wheter it was the right login in CSAM (it was). No subscribtion showed up.
+Account nr.: 620007552
+Username: 620007552
+Password: papir5T2
+LID/Nr.: YL 58 05 08
+Time and date: 2016-11-15
+Customers affected: 1
+URL: https://yousee.dk/mityousee/forside.aspx"
+IM499507,3 - Average,Jonas Marschall,,,Referred, SUPPORT-7004  DocID: 38093736 - The customer gets error message when the client tries to,m48050,15/11/16 15:39:13,"YouSee Development, Application",data,Mit Yousee,20/12/16 11:59:56,Ramamohan Chokkam,"The customer gets error message when the client tries to view account information
+Coax BB/TV
+Customer is logged in
+More than one device
+
+This is the first time customer has this issue
+Web - Chrome
+Customer logs into profil.yousee.dk, clickes on 'Regning og betaling"" and then clicks on ""Regning til TV og Bredbånd"".
+Error Message: Hey! A mistake happened. We regret.
+
+
+We are experiencing currently a mistake to show proper proof of payment of the bill. We must therefore ask you to log out of My YouSee and back in again. If your bill is still listed as unpaid, so there has been an error. If it no longer stands as possible to pay everything in perfect order.
+
+We are working on resolving the error as soon as possible.
+This has cf. The customer going on for a month.
+I can recreate the same mistake as the customer. The customer is properly registered in the system, CU, CSAM and MDB.
+Account nr.: 622158958
+Username: 622158958
+Password: Matthias09
+LID/Nr.: YL241802
+Time and date: 2016-10-14
+Customers affected: 1
+URL: yousee.dk",updated,"The customer gets error message when the client tries to view account information
+Coax BB/TV
+Customer is logged in
+More than one device
+
+This is the first time customer has this issue
+Web - Chrome
+Customer logs into profil.yousee.dk, clickes on 'Regning og betaling"" and then clicks on ""Regning til TV og Bredbånd"".
+Error Message: Hey! A mistake happened. We regret.
+
+
+We are experiencing currently a mistake to show proper proof of payment of the bill. We must therefore ask you to log out of My YouSee and back in again. If your bill is still listed as unpaid, so there has been an error. If it no longer stands as possible to pay everything in perfect order.
+
+We are working on resolving the error as soon as possible.
+This has cf. The customer going on for a month.
+I can recreate the same mistake as the customer. The customer is properly registered in the system, CU, CSAM and MDB.
+Account nr.: 622158958
+Username: 622158958
+Password: Matthias09
+LID/Nr.: YL241802
+Time and date: 2016-10-14
+Customers affected: 1
+URL: yousee.dk"
+IM499770,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-6690  Missing products at Mit YouSee at customer 611152241 due to error in products in EDW,m48050,16/11/16 11:32:29,"YouSee Development, Application",data,YOUSEE MDB,16/11/16 15:31:54,Ramamohan Chokkam,"Customer: 611152241
+please correct products in EDW.",updated,"Customer: 611152241
+please correct products in EDW."
+IM499793,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6694 The customer doesn't have the rights to his tv products,m48050,16/11/16 13:11:44,"YouSee Development, Application",data,YOUSEE MDB,16/11/16 15:45:10,Ramamohan Chokkam,"Customer no or address: 628582754, Vangedevej 233 B, ST TH, 2870  Dyssegård
+System: Masterdatabasen
+Procuct: TV
+Login info:
+Serial no:
+The customer tried to log into his yousee account but when he logs in. The site says he has no rights to tv. In ""Masterdatabasen"" the address doesn't show and you can't search on the customer number.
+Login: 628582754 Adgangskode: Marcus26
+
+Products should be added and customer address changed to installation seq: 	1380815",updated,"Customer no or address: 628582754, Vangedevej 233 B, ST TH, 2870  Dyssegård
+System: Masterdatabasen
+Procuct: TV
+Login info:
+Serial no:
+The customer tried to log into his yousee account but when he logs in. The site says he has no rights to tv. In ""Masterdatabasen"" the address doesn't show and you can't search on the customer number.
+Login: 628582754 Adgangskode: Marcus26
+
+Products should be added and customer address changed to installation seq: 	1380815"
+IM501500,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-6743 Customer number not in masterdatabasen and SPOC,m48050,21/11/16 10:15:45,"YouSee Development, Application",data,YOUSEE MDB,21/11/16 11:42:02,Ramamohan Chokkam,"Customer:685685214
+Looks like Products are not loadet to EDW
+please see attached",updated,"Customer:685685214
+Looks like Products are not loadet to EDW
+please see attached"
+IM502509,3 - Average,Subhalaxmi Tripathy,,,Accepted,SUPPORT-6760 Login could not be created - customer number unknown,m48050,22/11/16 09:45:45,"YouSee Development, Application",technical,KASIA-DEV,19/12/16 10:14:26,Ayan Chatterjee (2),"Login for the customer cannot be created.
+The customers are :
+624215453
+630247699
+642338954
+642338954
+656612654
+662321421
+666522534
+666522534
+684512452
+
+The error is {""Status"":75,""DateTime"":""2016-11-21 08:36:55"",""CalledFunction"":""CreateYouSeeLogin"",""Message"":""Login could not be created - customer number unknown""}.",updated,"Login for the customer cannot be created.
+The customers are :
+624215453
+630247699
+642338954
+642338954
+656612654
+662321421
+666522534
+666522534
+684512452
+
+The error is {""Status"":75,""DateTime"":""2016-11-21 08:36:55"",""CalledFunction"":""CreateYouSeeLogin"",""Message"":""Login could not be created - customer number unknown""}."
+IM502529,3 - Average,Daniel Brøns Evald,,,Accepted,SUPPORT-6755 - Missing products in OASIS,m48050,22/11/16 10:28:41,Cap Geminis AD,data,Oasis,30/11/16 08:12:50,Ramamohan Chokkam,"Customer no or address: Filmbyen 8D 2650 and Amager Strandvej 114 C 13 TH, 2300
+System: OASIS
+Procuct: Andet
+Login info:
+Serial no:
+Hello
+
+Two adresses are missing their ""Fuldpakke"" in OASIS on Insallationsliste
+
+Filmbyen 8D 2650
+Amager Strandvej 114 C 13 TH, 2300",updated,"Customer no or address: Filmbyen 8D 2650 and Amager Strandvej 114 C 13 TH, 2300
+System: OASIS
+Procuct: Andet
+Login info:
+Serial no:
+Hello
+
+Two adresses are missing their ""Fuldpakke"" in OASIS on Insallationsliste
+
+Filmbyen 8D 2650
+Amager Strandvej 114 C 13 TH, 2300"
+IM503319,3 - Average,Daniel Brøns Evald,,,Accepted,SUPPORT-6928  DocID: 38448037 - The customer can not registre mail or mobil nr. on Mit Yousee,m48050,25/11/16 12:35:17,"YouSee Development, Application",data,Mit Yousee,9/12/2016 13:55,Ramamohan Chokkam,"Coax BB/TV
+Customer is logged in
+More than one device
+
+This is the first time customer has this issue
+Web - Explorer
+The customer can not registre mail or mobil nr. on Mit Yousee.
+Tested by Google Chrome.
+Can restore the fault.
+Account nr.: 630079134
+Username: 630079134
+Password: pejle5L5
+LID/Nr.: YC 21 57 71
+Time and date: 2016-11-24
+Customers affected: 1
+URL: https://yousee.dk/404.aspx?aspxerrorpath=/mityousee/mineoplysninger.aspx
+
+
+Problem is because of a data error. This call http://kasia.int.yousee.dk/afsaetning/2895832/582796/W/630079134 gives an error, because customer 602584668 is not found in kasia, so online can't fix this issue.",updated,"Coax BB/TV
+Customer is logged in
+More than one device
+
+This is the first time customer has this issue
+Web - Explorer
+The customer can not registre mail or mobil nr. on Mit Yousee.
+Tested by Google Chrome.
+Can restore the fault.
+Account nr.: 630079134
+Username: 630079134
+Password: pejle5L5
+LID/Nr.: YC 21 57 71
+Time and date: 2016-11-24
+Customers affected: 1
+URL: https://yousee.dk/404.aspx?aspxerrorpath=/mityousee/mineoplysninger.aspx
+
+
+Problem is because of a data error. This call http://kasia.int.yousee.dk/afsaetning/2895832/582796/W/630079134 gives an error, because customer 602584668 is not found in kasia, so online can't fix this issue."
+IM503913,3 - Average,Daniel Brøns Evald,,,Referred,"SUPPORT-6849,ysmobilregning@yousee.dk in SPOC doesn't work",m29485,29/11/16 08:28:06,"YouSee Development, SalesForce",data,SPOC - Sager,14/12/16 09:55:53,Vidhya Prabhu,"Customer no or address: 03524043
+System: SPOC
+Procuct: Andet
+Login info:
+Serial no:
+The customer has sent an e-mail to SPOC tray Sitel - Mobil Sitel, to mail address ysmobilregning@yousee.dk the 15. of November. But the e-mail has never reached the tray. I have tested the e-mail by sending af mail - it has not appeared in the tray.
+
+Please see https://eu4.salesforce.com/a2Z57000002fBQb?srPos=0&srKp=a2Z for reference",updated,"Customer no or address: 03524043
+System: SPOC
+Procuct: Andet
+Login info:
+Serial no:
+The customer has sent an e-mail to SPOC tray Sitel - Mobil Sitel, to mail address ysmobilregning@yousee.dk the 15. of November. But the e-mail has never reached the tray. I have tested the e-mail by sending af mail - it has not appeared in the tray.
+
+Please see https://eu4.salesforce.com/a2Z57000002fBQb?srPos=0&srKp=a2Z for reference"
+IM503919,3 - Average,Thomas Andreasen,,,Open,CC-80 Product not shown in Eorder,,29/11/16 08:56:12,"YouSee Development, Application",data,SPOC - Sager,29/11/16 08:59:17,Thomas Andreasen,"Customer:627549895 product 1205113 is not shown in Eordre when ordered Yousee.com
+Gives error in KMON
+please see attached",updated,"Customer:627549895 product 1205113 is not shown in Eordre when ordered Yousee.com
+Gives error in KMON
+please see attached"
+IM503924,3 - Average,Thomas Andreasen,,,Open,CC-157 Product not shown in Eorder,,29/11/16 09:06:47,"YouSee Development, Application",data,SPOC - Sager,29/11/16 09:06:47,,"Customer:608026396 Customer asked for 36 channels , but there is fuldpakke and the 22 channels are not shown in e-Order.
+please see KMON link:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/orderview.html?orderid=b6bde4d1-b2f0-4ecb-8839-850778c1febf.",DEADLINE ALERT,"Customer:608026396 Customer asked for 36 channels , but there is fuldpakke and the 22 channels are not shown in e-Order.
+please see KMON link:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/orderview.html?orderid=b6bde4d1-b2f0-4ecb-8839-850778c1febf."
+IM504558,3 - Average,Daniel Brøns Evald,,,Acknowledged,"SUPPORT-6820,Adresses ""red"" in oasis at CU 6026467",m29201,29/11/16 13:05:32,"YouSee Development, Data",data,Oasis,27/01/17 10:32:34,Pallavi Takale,"Customer no or address: cu 6026467
+System: OASIS
+Procuct: Andet
+Login info:
+Serial no:
+Hello
+
+We have adresses wrong in oasis. They are all ""red""
+
+They were moved from CU 5006715  to CU 6026467 in april
+
+In salesforce they are at both CUs
+
+See attachments
+
+Can you be of assistance?
+
+Best regards
+
+Kim Mikael Pedersen",updated,"Customer no or address: cu 6026467
+System: OASIS
+Procuct: Andet
+Login info:
+Serial no:
+Hello
+
+We have adresses wrong in oasis. They are all ""red""
+
+They were moved from CU 5006715  to CU 6026467 in april
+
+In salesforce they are at both CUs
+
+See attachments
+
+Can you be of assistance?
+
+Best regards
+
+Kim Mikael Pedersen"
+IM504824,3 - Average,Daniel Brøns Evald,,,Accepted,SUPPORT-6927 Error in the EDW table BIER_AKTIVITET,m22762,2/12/2016 12:04,"YouSee Development, Data",technical,GENERAL,9/12/2016 12:08,Shailesh Prasad,"It appears that some open orders in MSOS/BIER are not found in the EDW table ""BIER_AKTIVITET"".
+
+See attached mail",updated,"It appears that some open orders in MSOS/BIER are not found in the EDW table ""BIER_AKTIVITET"".
+
+See attached mail"
+IM505544,3 - Average,Daniel Brøns Evald,,,Referred, SUPPORT-7006 DocID: 38343429 - Can not create a login,m48050,5/12/2016 13:59,"YouSee Development, Application",application,Mit Yousee,20/12/16 12:16:08,Ramamohan Chokkam,"Customer Kurt Johansen has tried to create a login (O-customer login) but the system hangs on the page.
+AMS id: 923652
+Installation seq: 237762
+Address:  Bøgevang 68 2640 Hedehusene",updated,"Customer Kurt Johansen has tried to create a login (O-customer login) but the system hangs on the page.
+AMS id: 923652
+Installation seq: 237762
+Address:  Bøgevang 68 2640 Hedehusene"
+IM505679,3 - Average,Thomas Andreasen,,,Referred,"SUPPORT-7084 , Doesn transfer ""Salgsansvarlig and kundeansvarlig"" to the ""ativitet's træk""",m56142,7/12/2016 10:05,"YouSee Development, Data",data,SPOC - Kunder,11/1/2017 6:31,Ramamohan Chokkam,"Hi
+For some reason when there is a tranfer of informations to ""aktivitets  trækket"" located on
+X:\Salg O-Kunde mapper\Support teams\YSP\YSP interne arb. dok\SQL Rapporter - Aktivitet, on samlet3 drive.
+its propalby an EDW error, but we cant say for sure.
+
+Can u see why?
+Best regards
+Kim Farnæs",DEADLINE ALERT,"Hi
+For some reason when there is a tranfer of informations to ""aktivitets  trækket"" located on
+X:\Salg O-Kunde mapper\Support teams\YSP\YSP interne arb. dok\SQL Rapporter - Aktivitet, on samlet3 drive.
+its propalby an EDW error, but we cant say for sure.
+
+Can u see why?
+Best regards
+Kim Farnæs"
+IM505703,3 - Average,Birgitte Lund,,,Work In Progress,EWEB-1309: Issue on Yousee COAX Speed profile in eWeb.,m73451,7/12/2016 13:25,"YouSee Development, Application",application,eWeb,21/12/16 10:24:46,Gert Wulff Larsen,"Please create an incident on the following issue for eWeb application:
+
+
+The speed Profile 15/3 is getting speed disabled if any other speed profile is selected for the order.
+Steps to reproduce:
+1) Start any coax order flow providing COAX enabled address.
+2) Proceed til the Speed selection page.
+3) Click any speed other than 15/3.
+Expected: All the remaining speed profile still should appear in the screen and user should be able to toggle between speeds.
+Actual: The speed profile 15/3 is getting speed disabled even if it appeared 1st time.
+See the attached screenshots.",updated,"Please create an incident on the following issue for eWeb application:
+
+
+The speed Profile 15/3 is getting speed disabled if any other speed profile is selected for the order.
+Steps to reproduce:
+1) Start any coax order flow providing COAX enabled address.
+2) Proceed til the Speed selection page.
+3) Click any speed other than 15/3.
+Expected: All the remaining speed profile still should appear in the screen and user should be able to toggle between speeds.
+Actual: The speed profile 15/3 is getting speed disabled even if it appeared 1st time.
+See the attached screenshots."
+IM505715,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6916 Not able to terminate phone due to missing data,m48050,7/12/2016 14:10,"YouSee Development, Application",data,SPOC - Salg,8/12/2016 14:27,Ramamohan Chokkam,"Customer no or address: 626318543
+System: SPOC Salg
+
+Please sync products. Because 	1122021 is not found in EDW, it is not possible to terminate the phone.",updated,"Customer no or address: 626318543
+System: SPOC Salg
+
+Please sync products. Because 	1122021 is not found in EDW, it is not possible to terminate the phone."
+IM506052,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-6882 Products missing in MDB/EDW,m48050,5/12/2016 11:06,"YouSee Development, Application",data,YOUSEE MDB,6/12/2016 10:15,Ramamohan Chokkam,"Customer:629683131 are missing products in EDW
+please add products in EDW
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=629683131
+
+Also other customer number on address(616041949) has no products in CU",updated,"Customer:629683131 are missing products in EDW
+please add products in EDW
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=629683131
+
+Also other customer number on address(616041949) has no products in CU"
+IM506888,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-6936 Products missing in MDB due to wrong status on products in EDW,m48050,12/12/2016 9:08,"YouSee Development, Application",data,YOUSEE MDB,13/12/16 11:26:27,Ramamohan Chokkam,"Costumer:610280065 has wrong status on products in EDW
+please change status in EDW:
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=610280065",updated,"Costumer:610280065 has wrong status on products in EDW
+please change status in EDW:
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=610280065"
+IM506986,3 - Average,Daniel Brøns Evald,,,Accepted," SUPPORT-6914 DocID: 38591483 - the customer can not choose any channels on ""bland selv kanaler""",m48050,8/12/2016 13:34,"YouSee Development, Application",data,Mit Yousee,20/12/16 13:08:59,Ramamohan Chokkam,"Customer: 620930615
+
+Please sync customer products, then customer will be able to choose the channels online.
+
+error"": ""Array rollback (init-afsaetning) fejlede (datafejl): Set E.O.FO1.GA(100) = '1101001','1101101','1101201','1103008',NONE [1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1]""",updated,"Customer: 620930615
+
+Please sync customer products, then customer will be able to choose the channels online.
+
+error"": ""Array rollback (init-afsaetning) fejlede (datafejl): Set E.O.FO1.GA(100) = '1101001','1101101','1101201','1103008',NONE [1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1]"""
+IM507812,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6962 No acces to Archive,m48050,15/12/16 11:16:26,"YouSee Development, Application",data,YOUSEE MDB,16/12/16 07:45:20,Ramamohan Chokkam,"Customer no or address: 629961062
+System: Masterdatabasen
+Procuct: YouSee Boks Humax
+Login info: -
+Serial no:
+Experiencing that there is only acces to Arkiv for grunpakke channels on humax box, it is not possible to acces other bland selv channels, there is no data in MDB for the services he should have acces tooi, and have 2 separate account numbers one for tv and one for broadband.
+
+Please reactivate products in EDW.",updated,"Customer no or address: 629961062
+System: Masterdatabasen
+Procuct: YouSee Boks Humax
+Login info: -
+Serial no:
+Experiencing that there is only acces to Arkiv for grunpakke channels on humax box, it is not possible to acces other bland selv channels, there is no data in MDB for the services he should have acces tooi, and have 2 separate account numbers one for tv and one for broadband.
+
+Please reactivate products in EDW."
+IM508816,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6982 38684982 - Missing rights in MDB,m48050,19/12/16 11:23:59,"YouSee Development, Application",data,YOUSEE MDB,20/12/16 08:08:45,Ramamohan Chokkam,"Customer no or address: 610280065
+System: Masterdatabasen
+Procuct: TV
+Login info:
+Serial no:
+Customer can't watch WebTV due to no rights in MDB SQL.
+Customer is moving to another adress at the 30th of December, but it hasn't been working since the 8th of December.
+
+Please sync active products in EDW/MDB",updated,"Customer no or address: 610280065
+System: Masterdatabasen
+Procuct: TV
+Login info:
+Serial no:
+Customer can't watch WebTV due to no rights in MDB SQL.
+Customer is moving to another adress at the 30th of December, but it hasn't been working since the 8th of December.
+
+Please sync active products in EDW/MDB"
+IM508840,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-6986 38635408 - Missing access to BS channels,m48050,19/12/16 13:01:46,"YouSee Development, Application",data,YOUSEE MDB,20/12/16 08:14:31,Ramamohan Chokkam,"Customer: 602657283
+
+Please add the missing products in EDW/MDB",updated,"Customer: 602657283
+
+Please add the missing products in EDW/MDB"
+IM509004,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-7024 DocID: 38703790 - the customer can´t see any abon to MitYousee,m48050,21/12/16 10:26:33,"YouSee Development, Application",data,Mit Yousee,23/12/16 07:29:18,Ramamohan Chokkam,"Username: 625937661
+Password: Humleh38
+LID/Nr.: YC 80 14 62
+
+This is due to bad data. Please sync products for customer 625937661 and make sure that EDW products are taken down on customer 630443592.",updated,"Username: 625937661
+Password: Humleh38
+LID/Nr.: YC 80 14 62
+
+This is due to bad data. Please sync products for customer 625937661 and make sure that EDW products are taken down on customer 630443592."
+IM509016,3 - Average,Daniel Brøns Evald,,,Accepted, SUPPORT-7025 Order from Columbus not adding webtv access,m48050,21/12/16 11:39:34,"YouSee Development, Application",data,YOUSEE MDB,23/12/16 07:31:02,Ramamohan Chokkam,"Customer: 604702061
+Product in EDW: 1109998  %webtv (pakke)
+
+The customer did not get rights to webtv due to a discount on the tv-package. The discount has been removed in Columbus (see attached screenshot), but the table which MDB reads from is not updated.
+
+According to Keld Bøgh Mikkelsen this is what he looks at:
+
+select ltrim(rtrim(a.modtager)) modtager,
+           a.varenummer,
+           a.sidstrettet,
+           i.adresse_id,
+           ltrim(rtrim(a.modtager)) bruger,
+           decode(i.signal_levering,
+                  to_date('01-01-1900', 'dd-mm-yy'),
+                  to_date('01-01-2100', 'dd-mm-yyyy'),
+                  i.signal_levering) signal_levering,
+           decode(i.ophxr,
+                  to_date('01-01-1900', 'dd-mm-yyyy'),
+                  to_date('31-12-2047', 'dd-mm-yyyy'),
+                  i.ophxr) ophxr
+      from spoc_stag.cu2edw_abonnement_tmp@pctvspoc a, spoc_stag.cu2edw_instaftale_tmp@pctvspoc i
+     where a.linierabat in ('MP_RAB%OD', 'FP_RAB%OD', 'GP_RAB%OD')
+       and a.dataset = 'KTV'
+       and i.refid = a.lxbenummer
+       and i.dataset = 'KTV'
+       and a.modtager = ' 604702061';
+
+The order in Columbus needs to remove the product. Also it might be good to perform a cleanup in the table.",updated,"Customer: 604702061
+Product in EDW: 1109998  %webtv (pakke)
+
+The customer did not get rights to webtv due to a discount on the tv-package. The discount has been removed in Columbus (see attached screenshot), but the table which MDB reads from is not updated.
+
+According to Keld Bøgh Mikkelsen this is what he looks at:
+
+select ltrim(rtrim(a.modtager)) modtager,
+           a.varenummer,
+           a.sidstrettet,
+           i.adresse_id,
+           ltrim(rtrim(a.modtager)) bruger,
+           decode(i.signal_levering,
+                  to_date('01-01-1900', 'dd-mm-yy'),
+                  to_date('01-01-2100', 'dd-mm-yyyy'),
+                  i.signal_levering) signal_levering,
+           decode(i.ophxr,
+                  to_date('01-01-1900', 'dd-mm-yyyy'),
+                  to_date('31-12-2047', 'dd-mm-yyyy'),
+                  i.ophxr) ophxr
+      from spoc_stag.cu2edw_abonnement_tmp@pctvspoc a, spoc_stag.cu2edw_instaftale_tmp@pctvspoc i
+     where a.linierabat in ('MP_RAB%OD', 'FP_RAB%OD', 'GP_RAB%OD')
+       and a.dataset = 'KTV'
+       and i.refid = a.lxbenummer
+       and i.dataset = 'KTV'
+       and a.modtager = ' 604702061';
+
+The order in Columbus needs to remove the product. Also it might be good to perform a cleanup in the table."
+IM509048,3 - Average,Thomas Andreasen,,,Acknowledged,Change of adress on O-costumer,m26395,20/12/16 12:47:53,Cap Geminis AD,data,SPOC - Kunder,23/12/16 09:19:17,Pallavi Takale,"Hi
+We cant change the adress on O-costumers in Salesforce
+We change it in CU but there is no interaction with Salesforce, so it doesnt change in Salesforce",updated,"Hi
+We cant change the adress on O-costumers in Salesforce
+We change it in CU but there is no interaction with Salesforce, so it doesnt change in Salesforce"
+IM510597,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-7030 Error on NemID validation give no accsess to OTT,m48050,22/12/16 11:45:18,"YouSee Development, Application",data,YOUSEE MDB,23/12/16 07:38:53,Ramamohan Chokkam,"Customer gets login but no rights since 18/12
+http://www.masterdatabasen.dk/app/?navn=NEMID
+Keld bøgh is allready on this
+Info mail attached",updated,"Customer gets login but no rights since 18/12
+http://www.masterdatabasen.dk/app/?navn=NEMID
+Keld bøgh is allready on this
+Info mail attached"
+IM510619,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-7033 Wrong products on Customer in EDW,m48050,22/12/16 14:05:55,"YouSee Development, Application",data,YOUSEE MDB,23/12/16 07:43:02,Ramamohan Chokkam,"Customer:605394362 has wrong products in EDW
+customer should have:
+1101201
+1201508
+1201601 32562320484
+1201601 32908477659
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=1389017
+Please correct",updated,"Customer:605394362 has wrong products in EDW
+customer should have:
+1101201
+1201508
+1201601 32562320484
+1201601 32908477659
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=1389017
+Please correct"
+IM510977,3 - Average,Daniel Brøns Evald,,,Accepted,SUPPORT-7040 Wrong adress in MDB,m48050,23/12/16 13:46:55,"YouSee Development, Application",data,YOUSEE MDB,26/12/16 15:14:54,Ramamohan Chokkam,"Customer no or address: 618155821
+System: Masterdatabasen
+Procuct: Andet
+Login info:
+Serial no:
+Hi
+This Costumer, cant see his FP on WebTv ot his Humax boks.
+The adress on the ""juridiske"" costumer number is Tinagervej 6, but in MDB, the ""betaleradresse"" is listet so the costumer only gets the Gp that open on the ""betaler"" adress (618158571)
+
+Best regards
+
+Kim Farnæs",updated,"Customer no or address: 618155821
+System: Masterdatabasen
+Procuct: Andet
+Login info:
+Serial no:
+Hi
+This Costumer, cant see his FP on WebTv ot his Humax boks.
+The adress on the ""juridiske"" costumer number is Tinagervej 6, but in MDB, the ""betaleradresse"" is listet so the costumer only gets the Gp that open on the ""betaler"" adress (618158571)
+
+Best regards
+
+Kim Farnæs"
+IM512998,3 - Average,Daniel Brøns Evald,,,Accepted,Missing products in SPOC,m48050,4/1/2017 15:17,"YouSee Development, Application",data,SPOC - Kunder,5/1/2017 12:30,Rohit Kumar 1,"Customer: 628464991
+
+Please sync active products and move customer address to installation seq: 494667",updated,"Customer: 628464991
+
+Please sync active products and move customer address to installation seq: 494667"
+IM513108,3 - Average,Daniel Brøns Evald,,,Accepted,Can't terminate phone in SPOC salg,m48050,6/1/2017 8:55,"YouSee Development, Application",data,SPOC - Salg,6/1/2017 11:03,Rohit Kumar 1,"Customer: 616442956
+
+Because the product 1122021	Fibertillæg is missing in SPOC salg, the phone can't be terminated.",updated,"Customer: 616442956
+
+Because the product 1122021	Fibertillæg is missing in SPOC salg, the phone can't be terminated."
+IM513580,3 - Average,Thomas Andreasen,,,Accepted,Wrong data sent to BIER from Salesforce and MDB,m29485,9/1/2017 9:23,"YouSee Development, SalesForce",data,BIER,10/1/2017 13:57,Vidhya Prabhu,"When tehcnical support create an error report in BIER they use a link in SPOC or from MDB. In both cases the wrong tv-package is sent to BIER.
+this has been reported before and solved on IM477521 but reporter seems to have the same problem again.
+
+please see attached",updated,"When tehcnical support create an error report in BIER they use a link in SPOC or from MDB. In both cases the wrong tv-package is sent to BIER.
+this has been reported before and solved on IM477521 but reporter seems to have the same problem again.
+
+please see attached"
+IM513623,3 - Average,Thomas Andreasen,,,Referred, SUPPORT-7086  Products missing in MDB,m48050,9/1/2017 11:50,"YouSee Development, Application",data,YOUSEE MDB,17/01/17 11:04:38,Ann Rong,"Customer:623760022 are missing products in EDW/MDB
+Please add products:
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=34112",updated,"Customer:623760022 are missing products in EDW/MDB
+Please add products:
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=34112"
+IM514422,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-7123  Can not look address up in MDB,m48050,12/1/2017 15:23,"YouSee Development, Application",data,YOUSEE MDB,13/01/17 12:09:10,Ramamohan Chokkam,"Not possible to look this address up in MDB  Ingerslevsgade 138, 1705
+Looks like wrong Installation ID or somthing.",updated,"Not possible to look this address up in MDB  Ingerslevsgade 138, 1705
+Looks like wrong Installation ID or somthing."
+IM516015,3 - Average,Thomas Andreasen,,,Referred, SUPPORT-7179 Wrong address in Spoc,m48050,16/01/17 12:08:09,"YouSee Development, Application",data,SPOC - Kunder,24/01/17 12:21:17,Ramamohan Chokkam,"Customer:606049125 has wrong address in SPOC Should be the same as in Columbus : Garnisonsvej,45,1,Tv,3520 Farum",updated,"Customer:606049125 has wrong address in SPOC Should be the same as in Columbus : Garnisonsvej,45,1,Tv,3520 Farum"
+IM516161,3 - Average,Thomas Andreasen,,,Referred,Error on Priceing on Specific address,,17/01/17 13:11:46,"YouSee Development, Data",data,Mit Yousee,25/01/17 11:23:03,Lasse Ott Kartin,"Address:Rødovre Parkvej 335,st. 56, 2610 Rødovre. has wrong priceing on Yousee.dk.
+According to Jesper suhr The price on Grundpakken should not figure on the webpage .
+please see attached and attached mail on Danish.",updated,"Address:Rødovre Parkvej 335,st. 56, 2610 Rødovre. has wrong priceing on Yousee.dk.
+According to Jesper suhr The price on Grundpakken should not figure on the webpage .
+please see attached and attached mail on Danish."
+IM516221,3 - Average,Annette Rudfred,,,Referred,TASK 4197 error in POVA  YC260029 onr 173544755 and 173544897 Error Occurred @Tays ----- Errorcod,,18/01/17 08:57:46,"YouSee Development, Application",data,COLUMBUS,20/01/17 14:35:26,Mounisha Maity,"TASK 4197 error in POVA  YC260029 onr 173544755 and 173544897
+Error Occurred @Tays ----- Errorcod E : Bea-380000 ----- Reason : Internal
+
+ <?xml version=""1.0"" encoding=""utf-8""?>
+ <SyncYsProServiceRequest>
+  <forbruger>630552332</forbruger>
+  <kunde>
+   <adresse>
+    <bynavn>FREDERIKSBERG</bynavn>
+    <etage>4</etage>
+    <husnr>112</husnr>
+    <kommune>FREDERIKSBERG</kommune>
+    <kommunecode>147</kommunecode>
+    <amsid>0003650944</amsid>
+    <postnr>2000</postnr>
+
+    <side>MF</side>
+    <vejkode>0000000475</vejkode>
+    <vejnavn>KONG GEORGS VEJ</vejnavn>
+   </adresse>
+   <efternavn>GROSS</efternavn>
+   <fornavn>JESPER</fornavn>
+  </kunde>
+  <produkter>
+   <id>C1122652</id>
+   <parameters>
+    <linkid>7971-07-07-11.26.05.615313</linkid>
+    <channels>
+    ARKIV_,GRUNDP,SciTre,BBCWLD,DISCOV,2_NEWS,NATGEO,CNN_TV,BBCPRM,CA
+    NAL9,EUSPHD,KANAL6,CHARLI,KANAL4,ZULUTV,HISCHD,TV3PLU,2SPORT,TV3S
+    P2,BBCKNW,TV2SPO,ESP2HD</channels>
+    <cableUnit>0000906017</cableUnit>
+   </parameters>
+   <service_items>tv_channels</service_items>
+   <signal>true</signal>
+  </produkter>
+  <produkter>
+   <id>C1122652</id>
+   <parameters>
+    <linkid>7971-07-07-11.26.05.615313</linkid>
+
+    <channels>
+    ARKIV_,GRUNDP,SciTre,BBCWLD,DISCOV,2_NEWS,NATGEO,CNN_TV,BBCPRM,CA
+    NAL9,EUSPHD,KANAL6,CHARLI,KANAL4,ZULUTV,HISCHD,TV3PLU,2SPORT,TV3S
+    P2,BBCKNW,TV2SPO,ESP2HD</channels>
+    <cableUnit>0000906017</cableUnit>
+   </parameters>
+   <service_items>1990007</service_items>
+   <signal>true</signal>
+  </produkter>
+  <lid>YC260029</lid>
+  <system>CU</system>
+  <orderno>173544755</orderno>
+<taskno>4197</taskno>
+<taskid>0271-01-07-08.13.38.929996</taskid>
+<timestamp>2017-01-18-08.54.03.425812</timestamp>
+</SyncYsProServiceRequest>",updated,"TASK 4197 error in POVA  YC260029 onr 173544755 and 173544897
+Error Occurred @Tays ----- Errorcod E : Bea-380000 ----- Reason : Internal
+
+ <?xml version=""1.0"" encoding=""utf-8""?>
+ <SyncYsProServiceRequest>
+  <forbruger>630552332</forbruger>
+  <kunde>
+   <adresse>
+    <bynavn>FREDERIKSBERG</bynavn>
+    <etage>4</etage>
+    <husnr>112</husnr>
+    <kommune>FREDERIKSBERG</kommune>
+    <kommunecode>147</kommunecode>
+    <amsid>0003650944</amsid>
+    <postnr>2000</postnr>
+
+    <side>MF</side>
+    <vejkode>0000000475</vejkode>
+    <vejnavn>KONG GEORGS VEJ</vejnavn>
+   </adresse>
+   <efternavn>GROSS</efternavn>
+   <fornavn>JESPER</fornavn>
+  </kunde>
+  <produkter>
+   <id>C1122652</id>
+   <parameters>
+    <linkid>7971-07-07-11.26.05.615313</linkid>
+    <channels>
+    ARKIV_,GRUNDP,SciTre,BBCWLD,DISCOV,2_NEWS,NATGEO,CNN_TV,BBCPRM,CA
+    NAL9,EUSPHD,KANAL6,CHARLI,KANAL4,ZULUTV,HISCHD,TV3PLU,2SPORT,TV3S
+    P2,BBCKNW,TV2SPO,ESP2HD</channels>
+    <cableUnit>0000906017</cableUnit>
+   </parameters>
+   <service_items>tv_channels</service_items>
+   <signal>true</signal>
+  </produkter>
+  <produkter>
+   <id>C1122652</id>
+   <parameters>
+    <linkid>7971-07-07-11.26.05.615313</linkid>
+
+    <channels>
+    ARKIV_,GRUNDP,SciTre,BBCWLD,DISCOV,2_NEWS,NATGEO,CNN_TV,BBCPRM,CA
+    NAL9,EUSPHD,KANAL6,CHARLI,KANAL4,ZULUTV,HISCHD,TV3PLU,2SPORT,TV3S
+    P2,BBCKNW,TV2SPO,ESP2HD</channels>
+    <cableUnit>0000906017</cableUnit>
+   </parameters>
+   <service_items>1990007</service_items>
+   <signal>true</signal>
+  </produkter>
+  <lid>YC260029</lid>
+  <system>CU</system>
+  <orderno>173544755</orderno>
+<taskno>4197</taskno>
+<taskid>0271-01-07-08.13.38.929996</taskid>
+<timestamp>2017-01-18-08.54.03.425812</timestamp>
+</SyncYsProServiceRequest>"
+IM516280,3 - Average,Daniel Brøns Evald,,,Referred," SUPPORT-7180 Missing data ”Current _Case_number” and ""Latest_Case_number""",m10648,16/01/17 10:02:59,"YouSee Development, Data",data,KISS,25/01/17 13:33:46,Pallavi Takale,"Several coax cable units are missing data regarding ”Current _Case_number” and ""Latest_Case_number""
+
+These tables have been tested:
+
+PCTVKISS.CABLEUNIT - 79 CU's
+spoc_stag.CABLEUNIT - 79 CU's
+spoc_dw.SPOCCABLEUNIT - 118 CU's
+
+Please see attached",updated,"Several coax cable units are missing data regarding ”Current _Case_number” and ""Latest_Case_number""
+
+These tables have been tested:
+
+PCTVKISS.CABLEUNIT - 79 CU's
+spoc_stag.CABLEUNIT - 79 CU's
+spoc_dw.SPOCCABLEUNIT - 118 CU's
+
+Please see attached"
+IM516500,3 - Average,Daniel Brøns Evald,,,Referred,Customer can't see TV products on own address,,18/01/17 11:04:37,"YouSee Development, Application",application,Bestillingsflow - Yousee.dk,19/01/17 15:51:56,Daniel Brøns Evald,"Customer: 606539566
+Address: Klinken 30 2990
+URL: https://yousee.dk/tv.aspx + https://yousee.dk/tv.aspx?CoaxValideret=1
+
+The customer enters address on the page without logging in, but attached error message is given for TV tab. The BB tab works.
+
+It might be a problem for customer's with active subscriptions as the address ""Klinken 28 2990"" works. No subscriptions are found on this address and the installation belongs to the same cable unit.",updated,"Customer: 606539566
+Address: Klinken 30 2990
+URL: https://yousee.dk/tv.aspx + https://yousee.dk/tv.aspx?CoaxValideret=1
+
+The customer enters address on the page without logging in, but attached error message is given for TV tab. The BB tab works.
+
+It might be a problem for customer's with active subscriptions as the address ""Klinken 28 2990"" works. No subscriptions are found on this address and the installation belongs to the same cable unit."
+IM516852,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-7147Missing adressen in OASIS for CU 820576,m29485,18/01/17 10:42:00,Cap Geminis AD,data,Oasis,18/01/17 11:05:28,Tapan Mahapatra,"Customer no or address: CU 820576
+System: OASIS
+Procuct: Andet
+Login info:
+Serial no:
+Hello we are missing some adresses in OASIS at CU 820576
+
+They are in E-ordre and KISS
+
+ITs
+Rosens Kvarter 1, 4, 6, 9, 11, 13, 15, 19, 20, 21, 23, 25, 26, 27 Nivå 2990
+
+Best regards
+Kim Mikael Pedersen",updated,"Customer no or address: CU 820576
+System: OASIS
+Procuct: Andet
+Login info:
+Serial no:
+Hello we are missing some adresses in OASIS at CU 820576
+
+They are in E-ordre and KISS
+
+ITs
+Rosens Kvarter 1, 4, 6, 9, 11, 13, 15, 19, 20, 21, 23, 25, 26, 27 Nivå 2990
+
+Best regards
+Kim Mikael Pedersen"
+IM516881,3 - Average,Thomas Andreasen,,,Accepted,No products in EDW,m48050,18/01/17 13:30:45,"YouSee Development, Application",data,YOUSEE MDB,19/01/17 14:13:18,Rohit Kumar 1,"Customer:628262036 are missing products in EDW
+please add.
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=628262036",updated,"Customer:628262036 are missing products in EDW
+please add.
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=628262036"
+IM519655,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-7171 Error on Yousee.dk,m48050,20/01/17 08:52:29,"YouSee Development, Application",data,Mit Yousee,23/01/17 13:19:36,Ramamohan Chokkam,"Error occurres when customer tryes to look up witch tv pacgage they kan get . it comes op with some kind of error please see attached.
+Kirkestien 42 7100.
+We tryed on other address and it gives other info please see attached
+Kirkestien,24,7100
+We think it always surpose to show what kind of tv package the customer can get new customer or not on any given Coax address.
+Please have a look.",updated,"Error occurres when customer tryes to look up witch tv pacgage they kan get . it comes op with some kind of error please see attached.
+Kirkestien 42 7100.
+We tryed on other address and it gives other info please see attached
+Kirkestien,24,7100
+We think it always surpose to show what kind of tv package the customer can get new customer or not on any given Coax address.
+Please have a look."
+IM519841,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-7178 Missing Invoice from January in Salesforce,m29485,23/01/17 11:06:43,"YouSee Development, SalesForce",data,SPOC - Kunder,24/01/17 10:15:36,Tapan Mahapatra,"Hi
+we are missing some invoises in salesforce (see attached)
+on account 630021259, missing invoice 3.
+on account 602853801, missing invoice 88.
+on account 601084809, missing invoice 78.
+please see attached.
+Best regards
+
+Kim Farnæs",updated,"Hi
+we are missing some invoises in salesforce (see attached)
+on account 630021259, missing invoice 3.
+on account 602853801, missing invoice 88.
+on account 601084809, missing invoice 78.
+please see attached.
+Best regards
+
+Kim Farnæs"
+IM521323,3 - Average,Thomas Andreasen,,,Accepted,Wrong address in SPOC,m48050,26/01/17 13:48:59,Cap Geminis AD,data,SPOC - Kunder,27/01/17 12:54:52,Pallavi Takale,"Customer:624476315
+Should be the same as in Columbus: Strandvejen,58,5,2900 Hellerup",updated,"Customer:624476315
+Should be the same as in Columbus: Strandvejen,58,5,2900 Hellerup"
+IM521382,3 - Average,Thomas Andreasen,,,Referred, SUPPORT-7183 Cant remove installation,,24/01/17 12:40:38,Cap Geminis AD,data,KISS,25/01/17 22:34:33,Thomas Andreasen,"Hi
+We cant remove this installation ""Esromgade 16 2 tv 2200"" from the CU.
+There is no costumers og tv paccages in either eOrdre/CU og EDW.
+
+Can u remove it?",updated,"Hi
+We cant remove this installation ""Esromgade 16 2 tv 2200"" from the CU.
+There is no costumers og tv paccages in either eOrdre/CU og EDW.
+
+Can u remove it?"
+IM521437,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-7189 Remarks are deleted,m56142,25/01/17 08:56:07,"YouSee Development, Data",data,KISS,30/01/17 11:06:13,Ramamohan Chokkam,"In KISS there ar daily created remarks that can be merged into contracts, but some of these have been deleted, that meen they have an end date which has passed.
+Can we have made a run so all comments with an end date has passed will be deleted?
+And I can afterwards ask for a pullout of the remaining?
+
+It seems this script is not running anymore. After Jira SUPPORT-1608 , was running a run every Monday of the month. It seems it does not run anymore and have not driven for some time.
+We would like to have cleaned up the comments again, so it is possible to put it on again, and then make sure that all those with an expired deleted. Then we will subsequently try to clean up the remaining.
+
+Please look into
+Jira SUPPORT-1608 Witch is the old Case.",updated,"In KISS there ar daily created remarks that can be merged into contracts, but some of these have been deleted, that meen they have an end date which has passed.
+Can we have made a run so all comments with an end date has passed will be deleted?
+And I can afterwards ask for a pullout of the remaining?
+
+It seems this script is not running anymore. After Jira SUPPORT-1608 , was running a run every Monday of the month. It seems it does not run anymore and have not driven for some time.
+We would like to have cleaned up the comments again, so it is possible to put it on again, and then make sure that all those with an expired deleted. Then we will subsequently try to clean up the remaining.
+
+Please look into
+Jira SUPPORT-1608 Witch is the old Case."
+IM521479,3 - Average,Thomas Andreasen,,,Referred,"SUPPORT-7186 , Data is not corrected in Csam when corrected in SPOC",m10648,25/01/17 11:38:01,"YouSee Development, Application",data,CSAM 3.0,30/01/17 11:46:47,Ramamohan Chokkam,"Data is not corrected in Csam when corrected in SPOC or Columbus/Eordre
+Ex.
+630547506- mobilenumber  corrected in SPOC 24858660 on 24-01-2017 13:22 still not in Csam
+
+612809353-mobilenumber  corrected in SPOC 22132634 on 23-01-2017 12:09 still not in Csam
+
+608697394-mobilenumber  corrected in SPOC 51366209 on 24-01-2017 11:02 still not in Csam
+
+Still possible to syncronize data on every single customer through YSpro but it should be done by it self.
+
+611340367- name was changed on 25-01-2017 09:30 stil not in Csam
+
+please see attached",updated,"Data is not corrected in Csam when corrected in SPOC or Columbus/Eordre
+Ex.
+630547506- mobilenumber  corrected in SPOC 24858660 on 24-01-2017 13:22 still not in Csam
+
+612809353-mobilenumber  corrected in SPOC 22132634 on 23-01-2017 12:09 still not in Csam
+
+608697394-mobilenumber  corrected in SPOC 51366209 on 24-01-2017 11:02 still not in Csam
+
+Still possible to syncronize data on every single customer through YSpro but it should be done by it self.
+
+611340367- name was changed on 25-01-2017 09:30 stil not in Csam
+
+please see attached"
+IM521651,3 - Average,Thomas Andreasen,,,Accepted,"SUPPORT-7199,Wrong TV package in Servicecenter at CU 5012630 Høgevej 13",m29485,26/01/17 15:36:01,Cap Geminis AD,data,KISS,30/01/17 11:05:26,Tapan Mahapatra,"Hello there is a GP at Høgevej 13 6920
+
+But there is no subscription, so it shouldnt show.
+Can you be of assistance?
+Best regards
+Kim Mikael Pedersen",updated,"Hello there is a GP at Høgevej 13 6920
+
+But there is no subscription, so it shouldnt show.
+Can you be of assistance?
+Best regards
+Kim Mikael Pedersen"
+IM521737,3 - Average,Thomas Andreasen,,3/2/2017 12:14,Open,NO TLF Option in spoc sale due to incorrect products in EDW,,27/01/17 12:14:46,"YouSee Development, Application",data,YOUSEE MDB,27/01/17 12:14:46,,"Customer:616078328
+please correct:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=616078328",open,"Customer:616078328
+please correct:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=616078328"
+IM521748,3 - Average,Thomas Andreasen,,,Accepted,Missing rights for CMore Golf,m48050,27/01/17 13:17:05,"YouSee Development, Application",data,YOUSEE MDB,30/01/17 12:28:09,Rohit Kumar 1,"Customer can't watch CMore Golf on Web due to no rights in MDB/EDW
+ Customer: 612212105
+looks like product 8990385 never loaded into EDW from columbus?
+please see attached
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=612212105
+
+maybe you can help?",updated,"Customer can't watch CMore Golf on Web due to no rights in MDB/EDW
+ Customer: 612212105
+looks like product 8990385 never loaded into EDW from columbus?
+please see attached
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=612212105
+
+maybe you can help?"
+IM521769,3 - Average,Thomas Andreasen,,,Accepted,Products not active in EDW/MDB,m48050,27/01/17 15:10:17,"YouSee Development, Application",data,YOUSEE MDB,30/01/17 12:11:57,Rohit Kumar 1,"Customer:627644454 needs products to be activated in EDW
+Please activate products:
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=627644454",updated,"Customer:627644454 needs products to be activated in EDW
+Please activate products:
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=627644454"
+IM521774,3 - Average,Thomas Andreasen,,,Accepted,"SUPPORT-7197, BS Liste button is wrong placed, and all colors on the orange buttons are wrong colour",m29485,27/01/17 15:40:22,Cap Geminis AD,data,SERVICECENTER,30/01/17 11:06:46,Tapan Mahapatra,"Hello
+The ""BS liste"" button is wrongly placed after we have reopened. See screenshot 1
+Also the buttons shouldnt be orange after the newest organisational changes where colours were changed. Buttons should be ""our green"". As it is on the rest of yousee.dk(see screenshot 2)",updated,"Hello
+The ""BS liste"" button is wrongly placed after we have reopened. See screenshot 1
+Also the buttons shouldnt be orange after the newest organisational changes where colours were changed. Buttons should be ""our green"". As it is on the rest of yousee.dk(see screenshot 2)"
+IM521775,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-7205Wrong package at service center at CU 4005728,m29485,27/01/17 15:43:32,Cap Geminis AD,data,SERVICECENTER,31/01/17 06:32:45,Tapan Mahapatra,"Hello
+Service center is showing the wrong tv package at CU 4005728
+For the adress : MUNKERISVEJ 8, 1 TV 5230",updated,"Hello
+Service center is showing the wrong tv package at CU 4005728
+For the adress : MUNKERISVEJ 8, 1 TV 5230"
+IM521801,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-7207Cant change payment method,m29485,30/01/17 10:10:10,"YouSee Development, SalesForce",data,SPOC - Kunder,31/01/17 06:47:38,Tapan Mahapatra,"Customer no or address: 624076969
+System: SPOC
+Procuct: TV
+Login info:
+Serial no:
+I can't change payment method in SPOc. When I go to 'Se faktura' and click om 'Betalingsmetode', the window doent't appear.",updated,"Customer no or address: 624076969
+System: SPOC
+Procuct: TV
+Login info:
+Serial no:
+I can't change payment method in SPOc. When I go to 'Se faktura' and click om 'Betalingsmetode', the window doent't appear."
+IM521814,3 - Average,Thomas Andreasen,,6/2/2017 10:57,Open,Wrong address in SPOC,,30/01/17 10:57:05,Cap Geminis AD,data,SPOC - Kunder,30/01/17 10:57:05,,"Customer:624034379  has wrong address in SPOC
+Should be the same as in Columbus: 624034379",open,"Customer:624034379  has wrong address in SPOC
+Should be the same as in Columbus: 624034379"
+IM521839,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-7206Please deactivate products in EDW,m29485,30/01/17 12:24:07,Cap Geminis AD,data,SPOC - Kunder,31/01/17 06:36:29,Tapan Mahapatra,"Customer: 627800063
+Not active in Columbus anymore: 1301186, 1401002",updated,"Customer: 627800063
+Not active in Columbus anymore: 1301186, 1401002"
+IM521842,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-7202 NO TLF Option in spoc sale due to missing product in EDW,m48050,30/01/17 12:32:24,"YouSee Development, Application",data,YOUSEE MDB,30/01/17 14:07:28,Ramamohan Chokkam,"Customer:604002351
+please add following product in EDW:	1122021	
+
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=1154075",updated,"Customer:604002351
+please add following product in EDW:	1122021	
+
+http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=1154075"
+IM521843,3 - Average,Thomas Andreasen,,,Accepted,SUPPORT-7203 Products not correct in MDB/EDW,m48050,30/01/17 12:41:17,"YouSee Development, Application",data,YOUSEE MDB,30/01/17 14:08:53,Ramamohan Chokkam,"Customer:611731848
+please correct products in EDW:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=576042",updated,"Customer:611731848
+please correct products in EDW:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=576042"
+IM521851,3 - Average,Thomas Andreasen,,,Accepted, SUPPORT-7204 DocID: 38874293  Wrong products in EDW,m48050,30/01/17 13:35:22,"YouSee Development, Application",data,YOUSEE MDB,30/01/17 14:10:06,Ramamohan Chokkam,"Customer:601159652  has wrong products in EDW
+please correct: http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=601159652
+also addres is not correct in EDW
+Should be the same as in Columbus:Cedervangen,44,3450 Allerød",updated,"Customer:601159652  has wrong products in EDW
+please correct: http://kasia2-ci.int.yousee.dk:41001/kmon-v1/kundeview.html?kundeid=601159652
+also addres is not correct in EDW
+Should be the same as in Columbus:Cedervangen,44,3450 Allerød"
+IM521868,3 - Average,Thomas Andreasen,,6/2/2017 15:25,Open,Wrong address in SPOC,,30/01/17 15:25:05,Cap Geminis AD,data,SPOC - Kunder,30/01/17 15:25:05,,"Customer:607970871
+Should be the same as in Columbus:Nordre Frihavnsgade,54,4,2100 Kh Ø",open,"Customer:607970871
+Should be the same as in Columbus:Nordre Frihavnsgade,54,4,2100 Kh Ø"
+IM521876,3 - Average,Thomas Andreasen,,6/2/2017 16:00,Open,Wrong address in SPOC,,30/01/17 21:23:01,Cap Geminis AD,data,SPOC - Kunder,30/01/17 21:23:01,,"Customer:629152721
+Should be the same as in Columbus:Ravnsbjerggårdsvej,149,A,3480 Fredensborg",open,"Customer:629152721
+Should be the same as in Columbus:Ravnsbjerggårdsvej,149,A,3480 Fredensborg"
+IM521877,3 - Average,Thomas Andreasen,,6/2/2017 16:00,Open,No TLF option due to missing products in EDW,,30/01/17 22:34:55,"YouSee Development, Application",data,SPOC - Salg,30/01/17 22:34:55,,"Customer:630262585 are missing products in EDW
+please correct:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=124643",open,"Customer:630262585 are missing products in EDW
+please correct:http://kasia2-ci.int.yousee.dk:41001/kmon-v1/installation.html?instnr=124643"
+IM521878,3 - Average,Thomas Andreasen,,6/2/2017 16:00,Open,Wrong address in SPOC,,30/01/17 23:08:47,Cap Geminis AD,data,SPOC - Kunder,30/01/17 23:08:47,,"Customer:611055375
+Should be the same as in Columbus:Esthersvej,37,1,Th,2900 Hellerup",open,"Customer:611055375
+Should be the same as in Columbus:Esthersvej,37,1,Th,2900 Hellerup"
