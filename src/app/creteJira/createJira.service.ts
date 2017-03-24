@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, URLSearchParams } from '@angular/http';
+import { Http, Response, URLSearchParams, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import {Jsonp} from '@angular/http';
 import 'rxjs/add/operator/map';
@@ -25,5 +25,8 @@ export class CreateJiraService {
     errorHandler(error: Response) {
         console.error(error);
         return Observable.throw(error || 'Server Error');
+    }
+    authorize(u: string, p: string){
+
     }
  }

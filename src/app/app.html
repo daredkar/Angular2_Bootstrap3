@@ -12,15 +12,15 @@
           <a class="navbar-brand" href="#">HPSM &#10148; Jira</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-        <!--  <ul class="nav navbar-nav navbar-right">
-            <li><a href="/home">Home</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a [routerLink]="['/login']" class="a">Login </a></li>
+          <li><a [routerLink]="['/readExcel']" routerLinkActive="active">Read Excel by Code</a></li>
+          <li><a [routerLink]="['/createJira']">Create Jira </a></li>
+          <li><a [routerLink]="['/bulkCreate']">Bulk upload </a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
-          </form>-->
+          </form>
         </div>
       </div>
     </nav>
@@ -31,7 +31,7 @@
 
     <p> </p>
   </div>
-  </div>
+  </div><!--
 <div class="row">
     <div class="col-sm-2 col-md-2 col-lg-2">
       <div class="col-md-3 col-md-2 sidebar">
@@ -49,9 +49,9 @@
         </ul>
       </div>
     </div>
-      <div class="col-sm-10 col-md-9 col-lg-10 contentpage">
+      <div class="col-sm-10 col-md-9 col-lg-10 contentpage">-->
         <div class="container">
 	        <router-outlet></router-outlet>
         </div>
-    </div>
-  </div>
+    <!--</div>
+  </div>-->

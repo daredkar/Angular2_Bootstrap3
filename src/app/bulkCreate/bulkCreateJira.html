@@ -2,35 +2,39 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8 "/> 
 </head>
 <body>
-    
+    <div class="jumbotron">
+ <div class="well well-sm" style="background: lightgray"><h2> Issues in HPSM </h2></div>   
 <div class="container table-fixed">
     <form class="ui form" #f1="ngForm">
     <table class="table table-striped table-hover table-bordered " style="table-layout: fixed">
         <thead class="thead thead-inverse">
             <tr>
+                <th style="width: 30px"><input type="checkbox" (change)="checkAll($event)" [checked]="check"/></th>
                 <th style="width: 200px">Incident no.</th>
-                <th style="widows: 700px">Title</th>
+                <th style="width: 400px">Title</th>
+                <th style="width: 300px">Attachment</th>
             </tr>
         </thead>
         <tbody >
             <tr *ngFor="let t of data">
-                <td class="active"> <label><input type="checkbox">{{ t['Incident ID'] }} </label></td>
+                <td><label><input type="checkbox" [checked]="t.checked"></label></td>
+                <td class="active"> {{ t['Incident ID'] }} </td>
                 <td class="info">{{ t.Title  }}</td>
+                <td class="success"> <input type="file"/></td>
             </tr>
             <div class="btn-group-vertical">
-            <button type="button" class="btn btn-default btn-circle btn-lg" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-remove"></i></button>
-            <button type="button" class="btn btn-primary btn-circle btn-lg" style="position: fixed; bottom: 90px; right: 00px;"><i class="glyphicon glyphicon-list"></i></button>
-            <button type="button" class="btn btn-success btn-circle btn-lg" style="position: fixed; bottom: 150px; right: 00px;"><i class="glyphicon glyphicon-link"></i></button>
+            <!--<button type="button" class="btn btn-default btn-circle btn-lg" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-remove"></i></button>-->
+            <!--<button type="button" class="btn btn-primary btn-circle btn-lg" style="position: fixed; bottom: 90px; right: 00px;"><i class="glyphicon glyphicon-list"></i></button>-->
+            <button type="button" class="btn btn-success btn-circle btn-lg" (click)="resetAll($event)" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-link"></i></button>
                  <button type="button" class="btn btn-info btn-circle btn-xl" 
-                 style="position: fixed; bottom: 210px; right: 00px;" (click)="authorise()">
+                 style="position: fixed; bottom: 90px; right: 00px;" (click)="resetAll($event)">
                  <i class="glyphicon glyphicon-ok"></i>
                  </button>
                  </div>
         </tbody>
     </table>
     <router-outlet></router-outlet>
-    
-     
     </form>
+</div>
 </div>
 </body>

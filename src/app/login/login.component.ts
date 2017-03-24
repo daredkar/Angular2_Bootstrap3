@@ -2,18 +2,21 @@ import { Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Converter } from 'csvtojson';
 import { RouterModule } from '@angular/router';
+import * as csvtojson from 'csvtojson';
+import { Convert } from './convert';
+// import * as csv from 'csvtojson';
 
-import * as csv from 'csvtojson';
 
 @Component({
 selector: 'login',
 templateUrl: './app/login/login.html',
+providers:[Convert],
 })
 export class LoginComponent {
 csvUrl: string = 'app/assets/export.csv';  // URL to web API
   csvData: any[] = [];
 
-  constructor (private http: Http, private router: RouterModule) {}
+  constructor (private http: Http, private router: RouterModule, private convert: Convert) {}
 
   readCsvData () {
     this.http.get(this.csvUrl)
@@ -53,15 +56,7 @@ csvUrl: string = 'app/assets/export.csv';  // URL to web API
     return errMsg;
   }
 
-  convertToJson() {
-    const csvFilePath = 'app/assets/export.csv';
-   csv({noheader: true})
-      .fromFile(csvFilePath)
-      .on('json', (jsonObj: JSON) => {
-    console.log(jsonObj);
-    })
-      .on('done', (error: any) => {
-    console.log('end');
-    });
-  }
+getData() {
+  this.convert.readData('app/assets/export.csv');
+}
 }
