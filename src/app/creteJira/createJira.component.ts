@@ -30,6 +30,7 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         .subscribe(resData => this.data = resData,
                    resErr => this.errMsg = resErr );
         this.jira = {
+            Title: '',
             project_key: '',
             decription: '',
             issuetype_name: '',
@@ -49,7 +50,7 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
      onSubmit() {
     console.log(this.jiraForm.value, this.jiraForm.valid);
     }
-    authorization(){
+    authorization() {
 
     }
 }

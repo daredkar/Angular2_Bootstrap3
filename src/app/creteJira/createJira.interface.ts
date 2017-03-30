@@ -1,4 +1,5 @@
 export interface Jira {
+    Title: string;
     project_key: string;
     summary: string;
     decription: string;
