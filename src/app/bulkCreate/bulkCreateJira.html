@@ -5,7 +5,7 @@
     <div class="jumbotron">
  <div class="well well-sm" style="background: lightgray"><h2> Issues in HPSM </h2></div>   
 <div class="container table-fixed">
-    <form class="ui form" #f1="ngForm">
+    <form class="ui form" #f1="ngForm"  > 
     <table class="table table-striped table-hover table-bordered " style="table-layout: fixed">
         <thead class="thead thead-inverse">
             <tr>
@@ -17,7 +17,7 @@
         </thead>
         <tbody >
             <tr *ngFor="let t of data">
-                <td><label><input type="checkbox" [checked]="t.checked"></label></td>
+                <td><label><input type="checkbox" [checked]="t.checked" (change)="jiraSelectedList(t['Incident ID'],$event)" ></label></td>
                 <td class="active"> {{ t['Incident ID'] }} </td>
                 <td class="info">{{ t.Title  }}</td>
                 <td class="success"> <input type="file"/></td>
@@ -29,11 +29,12 @@
                  <button type="button" class="btn btn-info btn-circle btn-xl" 
                  style="position: fixed; bottom: 90px; right: 00px;" (click)="resetAll($event)">
                  <i class="glyphicon glyphicon-ok"></i>
-                 </button>
+                 </button>                    
                  </div>
         </tbody>
     </table>
     <router-outlet></router-outlet>
+ 
     </form>
 </div>
 </div>

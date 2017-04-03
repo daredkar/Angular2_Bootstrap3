@@ -16,7 +16,7 @@ export class BulkCreateJiraComponent implements OnInit{
 data: any;
 errMsg: string;
 private selectAll: any;
-
+jiraList : string [];
 constructor(private form: FormsModule, public http: Http, private createJiraService: CreateJiraService, private jsonp: Jsonp) {}
 
     ngOnInit() {
@@ -35,4 +35,22 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
      //check: = false;
         });
     }
+
+    jiraSelectedList(list : string,event : any){
+        if(this.jiraList.length>0){
+            if(this.jiraList.indexOf(list) != -1){
+                this.jiraList.splice(this.jiraList.indexOf(list),1);
+            } else {
+                this.jiraList.push(list);
+            }
+        } else {
+            this.jiraList.push(list);
+        }
+        
+        console.log(list);
+    }
+
+    onSubmit(value:any){
+    console.log(value);
+  }
 }
