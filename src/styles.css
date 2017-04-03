@@ -60,6 +60,7 @@ h1 {
 .contentpage{
 	overflow-x: hidden;
 	overflow-y: auto; 
+	max-width: 100%;
 }
 .a:hover{
 	color: black;
@@ -91,4 +92,34 @@ h1 {
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
+}
+.title{
+	color: black; 
+	font-family: 'Trocchi', serif; 
+	font-size: 45px; 
+	font-weight: normal; 
+	line-height: 48px; 
+	margin: 0;
+	text-align: center;
+}
+.scrollit {
+    overflow:scroll;
+    height:450px;
+	overflow-x: scroll;
+	overflow-y: scroll; 
+}
+.bigJumbotron{
+	padding: 1%
+}
+.thFixed{
+ position: absolute;
+}
+.mandatoryText{
+	border-left: red solid;	
+}
+.mandatoryButton{
+	border-bottom: green solid;
+}
+.leftColouredWell{
+	border-left: green solid;
 }

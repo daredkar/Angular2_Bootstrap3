@@ -1,30 +1,30 @@
 
 <!--this is the second form-->
 
-<div class="jumbotron" style="background-size: cover; background: contain;">
+<div class="jumbotron col-md-8 col-lg-8 col-xs-8 col-md-offset-2 col-xs-offset-2 bigJumbotron" style="background-size: cover; background: contain;">
 <h4>Create single jira issue by following (all fields are mandatory)</h4>   
     <div class="well">
     <form class="ui form" novalidate [formGroup]="jiraForm" (ngSubmit)="onSubmit(jiraForm)">
       <div class="form-group">
         <label for="Project_key">Project Key:</label>
-        <input type="text" class="form-control" id="Project_key" name="Project_key" [(ngModel)]="jira.project_key" formControlName="project_key">
+        <input type="text" class="form-control mandatoryText" id="Project_key" name="Project_key" [(ngModel)]="jira.project_key" formControlName="project_key">
         <div class="error"
   *ngIf="jiraForm.get('project_key').hasError('required') && jiraForm.get('project_key').touched">
   Project_key is required </div>
       </div>
       <div class="form-group">
         <label for="summary">summary:</label>
-        <input type="text" class="form-control" id="summary" name="summary" [(ngModel)]="jira.summary" formControlName="summary">
+        <input type="text" class="form-control mandatoryText" id="summary" name="summary" [(ngModel)]="jira.summary" formControlName="summary">
       </div>
       <div class="form-group">
         <label for="description">description:</label>
-        <input type="text" class="form-control" id="description" name="description" [(ngModel)]="jira.decription" formControlName="description">
+        <input type="text" class="form-control mandatoryText" id="description" name="description" [(ngModel)]="jira.decription" formControlName="description">
       </div>
       <div class="form-group">
         <label for="issuetype_name">issuetype name:</label>
-        <input type="text" class="form-control" id="issuetype_name" name="issuetype_name" [(ngModel)]="jira.issuetype_name" formControlName="issuetype_name">
-      </div>
-      <button type="submit" class="btn btn-primary btn-md">create basic jira issue</button>
+        <input type="text" class="form-control mandatoryText" id="issuetype_name" name="issuetype_name" [(ngModel)]="jira.issuetype_name" formControlName="issuetype_name">
+      </div><br/>
+      <button type="submit" class="btn btn-primary btn-lg mandatoryButton">Create Jira Issue</button>
     </form>
     <h3>{{ errMsg }}</h3>
     </div>
