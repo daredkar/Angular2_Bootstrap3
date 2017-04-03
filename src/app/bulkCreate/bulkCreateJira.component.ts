@@ -22,6 +22,8 @@ newData: any;
 c_data: Jira[];
 r_Jira: ResponseJira[];
 n_Jira: ResponseJira[] = [];
+jiraSelectedList: string [] = [] ;
+allJiraSelected : boolean;
 
 constructor(private form: FormsModule, public http: Http, private createJiraService: CreateJiraService, private jsonp: Jsonp) {}
 
@@ -30,11 +32,21 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         .subscribe(resData => this.r_Jira = resData,
                    resErr => this.errMsg = resErr );
     }
-    checkAll() {
-     this.r_Jira.forEach((t: any) => {
-            t.checked = true;
-        });
+    checkAll(event : any) {
+        if(event.target.checked){
+                 this.r_Jira.forEach((t: any) => {
+                 t.checked = true;
+                 this.allJiraSelected =true ;
+            });
+        } else {
+            this.r_Jira.forEach((t: any) => {
+            t.checked = false;
+            this.allJiraSelected = false;
+            });
+        }
+    
     }
+
     resetAll() {
      this.r_Jira.forEach((t: any) => {
      t.checked = false;
@@ -48,5 +60,18 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         });
         console.log(this.n_Jira);
     }
+
+    jiraSelected(list: string , event : any){
+        if(event.target.checked){
+                this.jiraSelectedList.push(list);
+        } else {
+            let index = this.jiraSelectedList.indexOf(list);
+            this.jiraSelectedList.splice(index,1);
+        }
+
+        console.log(this.jiraSelectedList);
+    }
+            
+    
 
 }
