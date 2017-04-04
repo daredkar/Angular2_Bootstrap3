@@ -1,87 +1,80 @@
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8 "/> 
-</head>
 <body>
-    <div class="">
- <div class="well well-sm" style="background: lightgray">
-     <!--<h3 class="title">  </h3> -->
-      <a data-toggle="collapse" data-parent="#accordion"  href="#collapseHpsmIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
-        Pending Jira Issues</a> 
-</div>   
-<div class="container table-fixed scrollit collapse"  id="collapseHpsmIssues">
-    <form class="ui form" #f1="ngForm">
-    <table class="table table-striped table-hover table-bordered scrollit" style="table-layout: fixed">
-        <thead class="thead thead-inverse">
-            <tr>
-                <th style="width: 30px"><input type="checkbox" (change)="checkAll($event)" [checked]="check"/></th>
-                <th style="width: 100px">Incident no.</th>
-                <th style="width: 300px">Title</th>
-                <th style="width: 200px">Attachment</th>
-            </tr>
-        </thead>
-        <tbody >
-            <tr *ngFor="let t of n_Jira; let i = index" [attr.data-index]="i" >
-                <td><label><input type="checkbox" (change)="jiraSelected(t['Incident ID'],$event)" [checked]="t.checked">{{i}}</label></td>
-                <td class="active"> {{ t['Incident ID'] }} </td>
-                <td class="info">{{ t.Title }}</td>
-                <td class="success"> <input type="file"/></td>
-            </tr>
-           <!-- <div class="btn-group-vertical">
-            <button type="button" class="btn btn-default btn-circle btn-lg" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-remove"></i></button>-->
-            <!--<button type="button" class="btn btn-primary btn-circle btn-lg" (click)="resetAll($event)" style="position: fixed; bottom: 180px; right: 00px;"><i class="glyphicon glyphicon-list"></i></button>
-            <button type="button" class="btn btn-success btn-circle btn-lg" (click)="resetAll($event)" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-link"></i></button>
-                 <button type="button" class="btn btn-info btn-circle btn-xl" 
-                 style="position: fixed; bottom: 90px; right: 00px;" (click)="sortSupport($event)">
-                 <i class="glyphicon glyphicon-ok"></i>
-                 </button>
-                 </div> -->
-        </tbody>
-    </table>
-    <router-outlet></router-outlet>
-    </form>
-</div>
+<div class="row">
+    <!-- ----------------------  Pending Jira Issues Table started--------------------- -->
+        <div class="col-md-8 col-lg-8 col-xs-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion"  href="#collapseHpsmIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
+                         Pending Jira Issues</a> 
+                    </div>
+                <div class="panel-body collapse" id="collapseHpsmIssues">
+                    <div class="table-fixed scrollit"   >
+                        <form class="ui form" #f1="ngForm">
+                            <button type="button" class="btn btn-primary btn-sm">Create Jira</button>
+                            <table class="table table-striped table-hover table-bordered scrollit" style="table-layout: fixed">
+                                <thead class="thead thead-inverse">
+                                    <tr>
+                                        <th width="5%" ><input type="checkbox" (change)="checkAll($event)" [checked]="check"/></th>
+                                        <th width="15%" >Incident no.</th>
+                                        <th width="50%">Title</th>
+                                        <th width="30%">Attachment</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr *ngFor="let t of n_Jira;">
+                                        <td><input type="checkbox" (change)="jiraSelected(t['Incident ID'],$event)" [checked]="t.checked"></td>
+                                        <td class="active"> {{ t['Incident ID'] }} </td>
+                                        <td class="info">{{ t.Title }}</td>
+                                        <td class="success"> <input type="file"/></td>
+                                    </tr>
+                                <!-- <div class="btn-group-vertical">
+                                    <button type="button" class="btn btn-default btn-circle btn-lg" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-remove"></i></button>-->
+                                    <!--<button type="button" class="btn btn-primary btn-circle btn-lg" (click)="resetAll($event)" style="position: fixed; bottom: 180px; right: 00px;"><i class="glyphicon glyphicon-list"></i></button>
+                                    <button type="button" class="btn btn-success btn-circle btn-lg" (click)="resetAll($event)" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-link"></i></button>
+                                        <button type="button" class="btn btn-info btn-circle btn-xl" 
+                                        style="position: fixed; bottom: 90px; right: 00px;" (click)="sortSupport($event)">
+                                        <i class="glyphicon glyphicon-ok"></i>
+                                        </button>
+                                        </div> -->
+                                </tbody>
+                            </table>
+                            <router-outlet></router-outlet>
+                        </form>
+                    </div>
+                </div>
+                </div>
+         </div>
+    <!-- ----------------------  Pending Jira Issues Table Ended --------------------- -->
 
-</div>
-<br />
-  <div class="">
- <div class="well well-sm" style="background: lightgray">
-     <!--<h3 class="title">  </h3> -->
-      <a data-toggle="collapse" data-parent="#accordion"  href="#collapseJiraIssues" aria-expanded="true" aria-controls="collapseOne" >
-         All HPSM Issues</a>
-</div>   
-<div class="container table-fixed scrollit collapse in"  id="collapseJiraIssues">
-    <form class="ui form" #f1="ngForm">
-    <button type="button" class="btn btn-primary btn-sm">Create Jira</button>
-    <table class="table table-striped table-hover table-bordered scrollit" style="table-layout: fixed">
-        <thead class="thead thead-inverse">
-            <tr>
-                <th style="width: 30px"><input type="checkbox" (change)="checkAll($event)" [checked]="check"/></th>
-                <th style="width: 100px">Incident no.</th>
-                <th style="width: 300px">Title</th>
-                <th style="width: 200px">Attachment</th>
-            </tr>
-        </thead>
-        <tbody >
-            <tr *ngFor="let t of r_Jira; let i = index" [attr.data-index]="i" >
-                <td><label><input type="checkbox" (change)="jiraSelected(t['Incident ID'],$event)" [checked]="t.checked">{{i}}</label></td>
-                <td class="active"> {{ t['Incident ID'] }} </td>
-                <td class="info">{{ t.Title }}</td>
-                <td class="success"> <input type="file"/></td>
-            </tr>
-            <!--<div class="btn-group-vertical">
-            <button type="button" class="btn btn-default btn-circle btn-lg" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-remove"></i></button>
-            <button type="button" class="btn btn-primary btn-circle btn-lg" (click)="resetAll($event)" style="position: fixed; bottom: 180px; right: 00px;"><i class="glyphicon glyphicon-list"></i></button>
-            <button type="button" class="btn btn-success btn-circle btn-lg" (click)="resetAll($event)" style="position: fixed; bottom: 30px; right: 00px;"><i class="glyphicon glyphicon-link"></i></button>
-                 <button type="button" class="btn btn-info btn-circle btn-xl" 
-                 style="position: fixed; bottom: 90px; right: 00px;" (click)="sortSupport($event)">
-                 <i class="glyphicon glyphicon-ok"></i>
-                 </button>
-                 </div> -->
-        </tbody>
-    </table>
-    <router-outlet></router-outlet>
-    </form>
-</div>
-
+    <!-- ----------------------  All HPSM Issues Table started --------------------- -->
+        <div class="col-md-4 col-lg-4 col-xs-4 ">
+                  
+                <div class="panel panel-default">
+                    <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion"  href="#collapseJiraIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
+                         All HPSM Issues</a> 
+                    </div>
+                <div class="panel-body collapse" id="collapseJiraIssues">
+                    <div class="table-fixed scrollit "  >
+                        <form class="ui form" #f1="ngForm">
+                            <table class="table table-striped table-hover table-bordered scrollit" style="table-layout: fixed">
+                                <thead class="thead thead-inverse">
+                                    <tr>
+                                        <th width="30%">Incident no.</th>
+                                        <th width="70%">Title</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr *ngFor="let t of n_Jira;">
+                                        <td class="active"> {{ t['Incident ID'] }} </td>
+                                        <td class="info">{{ t.Title }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <router-outlet></router-outlet>
+                        </form>
+                    </div>
+                </div>
+         </div>
+        </div>
+    <!-- ----------------------  All HPSM Issues Table Ended -------------------- -->
 </div>
 </body>

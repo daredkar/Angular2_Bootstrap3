@@ -104,8 +104,8 @@ h1 {
 }
 .scrollit {
     overflow:scroll;
-    height:450px;
-	overflow-x: scroll;
+    height:50em;
+	overflow-x: hidden;
 	overflow-y: scroll; 
 }
 .bigJumbotron{
