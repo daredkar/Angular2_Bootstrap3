@@ -5,8 +5,8 @@
     <div class="">
  <div class="well well-sm" style="background: lightgray">
      <!--<h3 class="title">  </h3> -->
-      <a data-toggle="collapse" data-parent="#accordion"  href="#collapseHpsmIssues" aria-expanded="true" aria-controls="collapseOne">
-         Issues in HPSM</a>
+      <a data-toggle="collapse" data-parent="#accordion"  href="#collapseHpsmIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
+        Pending Jira Issues</a> 
 </div>   
 <div class="container table-fixed scrollit collapse"  id="collapseHpsmIssues">
     <form class="ui form" #f1="ngForm">
@@ -20,7 +20,7 @@
             </tr>
         </thead>
         <tbody >
-            <tr *ngFor="let t of r_Jira; let i = index" [attr.data-index]="i" >
+            <tr *ngFor="let t of n_Jira; let i = index" [attr.data-index]="i" >
                 <td><label><input type="checkbox" (change)="jiraSelected(t['Incident ID'],$event)" [checked]="t.checked">{{i}}</label></td>
                 <td class="active"> {{ t['Incident ID'] }} </td>
                 <td class="info">{{ t.Title }}</td>
@@ -46,8 +46,8 @@
   <div class="">
  <div class="well well-sm" style="background: lightgray">
      <!--<h3 class="title">  </h3> -->
-      <a data-toggle="collapse" data-parent="#accordion"  href="#collapseJiraIssues" aria-expanded="true" aria-controls="collapseOne">
-         Jira Issues Pending</a>
+      <a data-toggle="collapse" data-parent="#accordion"  href="#collapseJiraIssues" aria-expanded="true" aria-controls="collapseOne" >
+         All HPSM Issues</a>
 </div>   
 <div class="container table-fixed scrollit collapse in"  id="collapseJiraIssues">
     <form class="ui form" #f1="ngForm">

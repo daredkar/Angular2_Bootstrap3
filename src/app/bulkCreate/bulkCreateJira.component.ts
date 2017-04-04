@@ -23,7 +23,8 @@ c_data: Jira[];
 r_Jira: ResponseJira[];
 n_Jira: ResponseJira[] = [];
 jiraSelectedList: string [] = [] ;
-allJiraSelected : boolean;
+allJiraSelected: boolean;
+isjirasorted: boolean = false;
 
 constructor(private form: FormsModule, public http: Http, private createJiraService: CreateJiraService, private jsonp: Jsonp) {}
 
@@ -31,12 +32,13 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         this.createJiraService.getMetadata()
         .subscribe(resData => this.r_Jira = resData,
                    resErr => this.errMsg = resErr );
+                    //this.sortSupport();
     }
-    checkAll(event : any) {
-        if(event.target.checked){
+    checkAll(event: any) {
+        if (event.target.checked){
                  this.r_Jira.forEach((t: any) => {
                  t.checked = true;
-                 this.allJiraSelected =true ;
+                 this.allJiraSelected = true ;
             });
         } else {
             this.r_Jira.forEach((t: any) => {
@@ -44,7 +46,6 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
             this.allJiraSelected = false;
             });
         }
-    
     }
 
     resetAll() {
@@ -53,16 +54,19 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         });
     }
     sortSupport() {
+        if (!this.isjirasorted) {
         this.r_Jira.forEach(element => {
            if (!(_.includes(element.Title, 'SUPPORT'))) {
                 this.n_Jira.push(element);
            }
         });
         console.log(this.n_Jira);
+        this.isjirasorted = true;
+        }
     }
 
     jiraSelected(list: string , event : any){
-        if(event.target.checked){
+        if (event.target.checked){
                 this.jiraSelectedList.push(list);
         } else {
             let index = this.jiraSelectedList.indexOf(list);
@@ -71,7 +75,4 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
 
         console.log(this.jiraSelectedList);
     }
-            
-    
-
-}
+ }

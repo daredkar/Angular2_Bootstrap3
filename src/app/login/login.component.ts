@@ -4,6 +4,8 @@ import { Converter } from 'csvtojson';
 import { RouterModule } from '@angular/router';
 import * as csvtojson from 'csvtojson';
 import { Convert } from './convert';
+import { AllowAccess } from '../allow-access.service';
+
 // import * as csv from 'csvtojson';
 
 

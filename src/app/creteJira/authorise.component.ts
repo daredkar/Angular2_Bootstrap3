@@ -5,6 +5,7 @@ import { CreateJiraService } from './createJira.service';
 import { Jira, JiraAuth } from './createJira.interface';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AllowAccess } from '../allow-access.service';
 
 @Component({
 // tslint:disable-next-line:no-trailing-whitespace
@@ -34,14 +35,14 @@ template: `
   <router-outlet></router-outlet>
   </div>
   </div>`,
-providers: [CreateJiraService]
+providers: [CreateJiraService, AllowAccess],
 })
 export class AuthorizeComponent implements OnInit {
 
 public jiraAuth: JiraAuth;
 AuthForm: FormGroup;
 
-constructor(private router: Router) {};
+constructor(private router: Router, private guard: AllowAccess) {};
 ngOnInit() {
     this.jiraAuth = {
         username: '',
@@ -54,6 +55,7 @@ ngOnInit() {
 }
 redirect() {
   alert('Authorization is Successfull');
-  this.router.navigate(['./bulkCreate']);
+  this.guard.allow = true;
+  this.router.navigate(['/bulkCreate']);
 }
 }
