@@ -35,12 +35,13 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
                     //this.sortSupport();
     }
     checkAll(event: any) {
+        let issueList: string[];
         if (event.target.checked){
                  this.r_Jira.forEach((t: any) => {
                  t.checked = true;
                  this.allJiraSelected = true ;
             });
-        } else {
+            } else {
             this.r_Jira.forEach((t: any) => {
             t.checked = false;
             this.allJiraSelected = false;
@@ -65,12 +66,12 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         }
     }
 
-    jiraSelected(list: string , event : any){
-        if (event.target.checked){
+    jiraSelected(list: string , event: any){
+        if (event.target.checked) {
                 this.jiraSelectedList.push(list);
         } else {
             let index = this.jiraSelectedList.indexOf(list);
-            this.jiraSelectedList.splice(index,1);
+            this.jiraSelectedList.splice(index, 1);
         }
 
         console.log(this.jiraSelectedList);

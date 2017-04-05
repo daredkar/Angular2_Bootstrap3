@@ -36,4 +36,7 @@ export class CreateJiraService {
     authorize(u: string, p: string){
 
     }
+    createBulkJira(jiraList: string[]) {
+
+    }
  }
