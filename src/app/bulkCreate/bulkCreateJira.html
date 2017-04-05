@@ -3,14 +3,20 @@
     <!-- ----------------------  Pending Jira Issues Table started--------------------- -->
         <div class="col-md-8 col-lg-8 col-xs-8">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion"  href="#collapseHpsmIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
-                         Pending Jira Issues</a> 
+                    <div class="panel-heading">
+                        <p> Pending Jira Issues 
+                            <a data-toggle="collapse" class="pull-right" data-parent="#accordion"  href="#collapseHpsmIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 
+                            </a> 
+                        </p>
                     </div>
                 <div class="panel-body collapse" id="collapseHpsmIssues">
-                    <div class="table-fixed scrollit"   >
+                     <button type="button" class="btn btn-default btn-sm" style="margin-bottom: 1%"> 
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create Jira
+                            </button>
+                    <div class="table-fixed scrollit screenResize"   >
                         <form class="ui form" #f1="ngForm">
-                            <button type="button" class="btn btn-primary btn-sm">Create Jira</button>
-                            <table class="table table-striped table-hover table-bordered scrollit" style="table-layout: fixed">
+                            <table class="table table-striped table-hover table-bordered " style="table-layout: fixed">
                                 <thead class="thead thead-inverse">
                                     <tr>
                                         <th width="5%" ><input type="checkbox" (change)="checkAll($event)" [checked]="check"/></th>
@@ -49,11 +55,11 @@
         <div class="col-md-4 col-lg-4 col-xs-4 ">
                   
                 <div class="panel panel-default">
-                    <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion"  href="#collapseJiraIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
-                         All HPSM Issues</a> 
+                    <div class="panel-heading"><p> All HPSM Issues <a data-toggle="collapse" class="pull-right" data-parent="#accordion"  href="#collapseJiraIssues" aria-expanded="true" aria-controls="collapseOne" (click) = "sortSupport($event)">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> </a> </p>
                     </div>
                 <div class="panel-body collapse" id="collapseJiraIssues">
-                    <div class="table-fixed scrollit "  >
+                    <div class="table-fixed scrollit screenResize"  >
                         <form class="ui form" #f1="ngForm">
                             <table class="table table-striped table-hover table-bordered scrollit" style="table-layout: fixed">
                                 <thead class="thead thead-inverse">

@@ -104,7 +104,6 @@ h1 {
 }
 .scrollit {
     overflow:scroll;
-    height:50em;
 	overflow-x: hidden;
 	overflow-y: scroll; 
 }
@@ -122,4 +121,46 @@ h1 {
 }
 .leftColouredWell{
 	border-left: green solid;
+}
+
+@media only screen
+and (min-height : 100px) and (max-height : 500px){
+	.screenResize{
+		height : 200px !important;
+	}
+}
+
+@media only screen
+and (min-height : 100px) and (max-height : 768px){
+	.screenResize{
+		height : 430px !important;
+	}
+}
+
+@media only screen
+and (min-height : 768px) and (max-height : 800px){
+	.screenResize{
+		height : 500px !important;
+	}
+}
+
+@media only screen
+and (min-height : 800px) and (max-height : 1024px){
+	.screenResize{
+		height : 660px !important;
+	}
+}
+
+@media only screen
+and (min-height : 1024px) and (max-height : 1050px){
+	.screenResize{
+		height : 900px !important;
+	}
+}
+
+@media only screen
+and (min-height : 1050px) and (max-height : 1280px){
+	.screenResize{
+		height : 1200px !important;
+	}
 }
