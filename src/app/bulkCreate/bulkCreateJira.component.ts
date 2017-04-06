@@ -4,6 +4,7 @@ import { Http, Response } from '@angular/http';
 import { CreateJiraService } from '../creteJira/createJira.service';
 import { Jira, JiraAuth } from '../creteJira/createJira.interface';
 import {ResponseJira} from './responseJira.interface';
+import {ReqCreateJira} from './reqCreateJira.interface';
 import {Jsonp} from '@angular/http';
 import * as csv from 'csvtojson';
 import * as _ from 'lodash';
@@ -20,11 +21,13 @@ data: any[];
 errMsg: string;
 newData: any;
 c_data: Jira[];
-r_Jira: ResponseJira[];
+r_Jira: ResponseJira[] = [];
 n_Jira: ResponseJira[] = [];
 jiraSelectedList: string [] = [] ;
 allJiraSelected: boolean;
 isjirasorted: boolean = false;
+req_Jira: ReqCreateJira[] = [];
+d_Jira: ResponseJira[] = [];
 
 constructor(private form: FormsModule, public http: Http, private createJiraService: CreateJiraService, private jsonp: Jsonp) {}
 
@@ -32,10 +35,8 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         this.createJiraService.getMetadata()
         .subscribe(resData => this.r_Jira = resData,
                    resErr => this.errMsg = resErr );
-                    //this.sortSupport();
     }
     checkAll(event: any) {
-        let issueList: string[];
         if (event.target.checked){
                  this.r_Jira.forEach((t: any) => {
                  t.checked = true;
@@ -75,5 +76,30 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
         }
 
         console.log(this.jiraSelectedList);
+    }
+    createJira() {
+        let a_Jira: ResponseJira = new ResponseJira();
+        let request: ReqCreateJira = new ReqCreateJira();
+        if (this.allJiraSelected) {
+
+        }else {
+            this.jiraSelectedList.forEach(element => {
+             a_Jira = _.find(this.r_Jira, function(o){return o['Incident ID'] === element; });
+             this.d_Jira.push(a_Jira);
+            });
+             for (let i = 0; i < this.d_Jira.length; i++) {
+                request.fields.summary = this.d_Jira[i].Title;
+                request.fields.description = this.d_Jira[i].Description;
+                request.fields.issuetype.id = this.d_Jira[i]['Incident ID'];
+                request.fields.issuetype.name = 'bug';
+                request.fields.customfield_10002 = 'admin';
+                request.fields.components.components.forEach(e => {
+                 e.name = 'Kasia2';
+                 });
+                request.fields.assignee.name = this.d_Jira[i].Assignee;
+               this.req_Jira.push(request);
+             }
+            console.log('record is inserted' + JSON.stringify(this.req_Jira));
+        }
     }
  }

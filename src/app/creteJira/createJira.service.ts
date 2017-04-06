@@ -37,6 +37,6 @@ export class CreateJiraService {
 
     }
     createBulkJira(jiraList: string[]) {
-
+        
     }
  }

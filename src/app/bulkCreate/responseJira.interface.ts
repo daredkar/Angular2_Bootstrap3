@@ -1,4 +1,4 @@
-export interface ResponseJira {
+export class ResponseJira {
         'Incident ID': string;
         'Priority': string;
         'Opened By Name': string;
