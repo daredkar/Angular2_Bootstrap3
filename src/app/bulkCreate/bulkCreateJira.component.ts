@@ -5,6 +5,8 @@ import { CreateJiraService } from '../creteJira/createJira.service';
 import { Jira, JiraAuth } from '../creteJira/createJira.interface';
 import {ResponseJira} from './responseJira.interface';
 import {ReqCreateJira} from './reqCreateJira.interface';
+import { JiraCreated } from '../bulkCreate/jiraCreated.interface';
+import { Observable } from 'rxjs/Observable';
 import {Jsonp} from '@angular/http';
 import * as csv from 'csvtojson';
 import * as _ from 'lodash';
@@ -28,6 +30,7 @@ allJiraSelected: boolean;
 isjirasorted: boolean = false;
 req_Jira: ReqCreateJira[] = [];
 d_Jira: ResponseJira[] = [];
+jira_success: JiraCreated;
 
 constructor(private form: FormsModule, public http: Http, private createJiraService: CreateJiraService, private jsonp: Jsonp) {}
 
@@ -77,9 +80,8 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
 
         console.log(this.jiraSelectedList);
     }
-    createJira() {
+    createJira(event: any) {
         let a_Jira: ResponseJira = new ResponseJira();
-        let request: ReqCreateJira = new ReqCreateJira();
         if (this.allJiraSelected) {
 
         }else {
@@ -87,19 +89,31 @@ constructor(private form: FormsModule, public http: Http, private createJiraServ
              a_Jira = _.find(this.r_Jira, function(o){return o['Incident ID'] === element; });
              this.d_Jira.push(a_Jira);
             });
+             //this.req_Jira.splice(0, this.req_Jira.length);
+             //this.req_Jira.length = 0;
              for (let i = 0; i < this.d_Jira.length; i++) {
+                let request: ReqCreateJira = new ReqCreateJira();
                 request.fields.summary = this.d_Jira[i].Title;
                 request.fields.description = this.d_Jira[i].Description;
                 request.fields.issuetype.id = this.d_Jira[i]['Incident ID'];
                 request.fields.issuetype.name = 'bug';
-                request.fields.customfield_10002 = 'admin';
-                request.fields.components.components.forEach(e => {
-                 e.name = 'Kasia2';
-                 });
-                request.fields.assignee.name = this.d_Jira[i].Assignee;
-               this.req_Jira.push(request);
+                //request.fields.customfield_10002 = 'admin';
+                // // request.fields.components.components.forEach(e => {
+                // //  e.name = 'Kasia2';
+                // //  });
+                //request.fields.assignee.name = this.d_Jira[i].Assignee;
+                this.req_Jira.push(request);
              }
-            console.log('record is inserted' + JSON.stringify(this.req_Jira));
+             this.req_Jira.forEach(element => {
+                 console.log('element ' + JSON.stringify(element));
+                 //do {
+                 this.createJiraService.createBulkJira(element)
+                 .subscribe(resData => this.jira_success = resData,
+                   resErr => this.errMsg = resErr );
+                 //}while (this.jira_success.id = null);
+             });
+            console.log('record is trying to insert in jira ' + JSON.stringify(this.jira_success));
         }
+        console.log('record is trying to insert in jira ' + JSON.stringify(this.jira_success));
     }
  }

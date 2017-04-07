@@ -30,7 +30,7 @@ export class Issuetype {
 export class ListComponents {
     components: Component[];
     constructor() {
-        this.components = [];
+        this.components[100] = new Component;
     }
 }
 export class Component {
